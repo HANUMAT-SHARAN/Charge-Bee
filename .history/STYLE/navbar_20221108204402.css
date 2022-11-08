@@ -42,7 +42,6 @@ width: 14%;;
     padding:6px;
     font-weight: bold;
     border-radius:4px;
-    color:white
 }
 #product{
     border:1px solid red;
@@ -50,20 +49,18 @@ width: 14%;;
     transition: 0.4ms;
     grid-template-columns: repeat(5,1fr);
     display: none;
-  background-color: rgb(252, 252, 252);
-    position:absolute;
+  background-color: rgb(15, 15, 15);
+    display:absolute;
     
    
 
 }
 #product h3{
-    color:rgb(0, 0, 0);
-    font-weight: bold;
+    color:white;
 }
 
 #product h4{
-    color:#5C07D1;
-    font-weight:bold;
+    color:#5C07D1
 }
 #product>div{
 

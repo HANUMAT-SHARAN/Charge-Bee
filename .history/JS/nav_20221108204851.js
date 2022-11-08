@@ -5,7 +5,7 @@ prohover.onmouseover=()=>{
     pro.style.display="block"
     pro.style.transition="0.10ms"
     pro.style.display="grid"
-   
+    pro.style.display="absolute"
    
    
 }
@@ -17,7 +17,7 @@ pro.onmouseover=()=>{
     pro.style.display="block"
     pro.style.transition="0.10ms"
     pro.style.display="grid"
-   
+    pro.style.display="absolute"
 }
 pro.onmouseout=()=>{
     pro.style.display="none"

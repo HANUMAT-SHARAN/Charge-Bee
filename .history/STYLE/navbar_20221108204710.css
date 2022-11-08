@@ -42,7 +42,7 @@ width: 14%;;
     padding:6px;
     font-weight: bold;
     border-radius:4px;
-    color:white
+    font
 }
 #product{
     border:1px solid red;
@@ -51,7 +51,7 @@ width: 14%;;
     grid-template-columns: repeat(5,1fr);
     display: none;
   background-color: rgb(252, 252, 252);
-    position:absolute;
+    display:absolute;
     
    
 

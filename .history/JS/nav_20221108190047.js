@@ -7,7 +7,6 @@ prohover.onmouseover=()=>{
     pro.style.display="grid"
    
    
-   
 }
 prices.onmouseover=()=>{
     pro.style.display="none"
@@ -17,7 +16,6 @@ pro.onmouseover=()=>{
     pro.style.display="block"
     pro.style.transition="0.10ms"
     pro.style.display="grid"
-   
 }
 pro.onmouseout=()=>{
     pro.style.display="none"
