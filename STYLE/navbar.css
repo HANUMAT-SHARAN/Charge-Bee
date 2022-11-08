@@ -15,7 +15,7 @@ body{
 #navbar>div{
     border:1px solid red;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -74,4 +74,22 @@ padding-top:20px;
 #second{
     width: 300px;
    line-height: 25px;
+}
+
+#solutions{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:20px;
+   
+    display: none;
+    position: absolute;
+}
+#solutions>div{
+    border:1px solid red;
+    align-items: center;
+padding-left: 30px;
+padding-top:20px;
+}
+#solutions h4{
+    color:#5C07D1;
 }
