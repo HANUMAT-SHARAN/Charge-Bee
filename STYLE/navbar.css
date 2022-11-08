@@ -1,7 +1,7 @@
 #navbar{
     display:grid;
 grid-template-columns: repeat(2,1fr);
-display: fixed;
+ /* position: fixed;  */
 
 
 }
@@ -10,10 +10,10 @@ body{
     padding:0px;
 }
 #logo{
-    width:10%;
+    width:13%;
 }
 #navbar>div{
-    border:1px solid red;
+    
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -45,12 +45,14 @@ width: 14%;;
     color:white
 }
 #product{
-    border:1px solid red;
+    
     display:grid;
     transition: 0.4ms;
     grid-template-columns: repeat(5,1fr);
+
     display: none;
-  background-color: rgb(252, 252, 252);
+    background-color: rgb(236, 232, 232);
+    border-radius: 20px;
     position:absolute;
     
    
@@ -80,16 +82,51 @@ padding-top:20px;
     display:grid;
     grid-template-columns: repeat(7,1fr);
     gap:20px;
-   
+    background-color: rgb(236, 232, 232);
+    border-radius: 20px;
     display: none;
     position: absolute;
 }
 #solutions>div{
-    border:1px solid red;
+    
     align-items: center;
 padding-left: 30px;
 padding-top:20px;
 }
 #solutions h4{
     color:#5C07D1;
+}
+#resources{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,180px);
+    width:90%;
+    gap:20px;
+    display: none;
+    position: absolute;
+    background-color: rgb(236, 232, 232);
+    border-radius: 20px;
+
+}
+#resources >div{
+    
+    line-height: 25px;
+    align-items: center;
+    padding-left: 30px;
+    padding-top:10px;
+}
+#resources h3{
+    color:#5C07D1;
+}
+#resources >:nth-child(1){
+
+    background-color: rgb(250, 187, 187);
+}
+#resources >:nth-child(1)>h3{
+    color:red;
+}
+#Dividernavbar{
+height:90px;
+
+
 }
