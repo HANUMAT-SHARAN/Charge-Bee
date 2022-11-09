@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#title_div{
+    background-color: #651aba;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#title_div>p{
+    border: 2px solid red;
+    padding: 0.75% 5%;
+    margin: 0px;
+}
+#form_div{
+    background: linear-gradient(107.66deg,#4300a3 11.51%,#6100bb 53.97%,#a700f1 85.07%);
+    padding-bottom: 0;
+    margin-bottom: 140px;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+#form_div_lhs{
+    padding-top: 0;
+    color: #fefefe;
+}
+
+#form_div_lhs>p:nth-child(1){
+    font-weight: 500;
+    font-size: 14px;
+    background: #522ec4;
+    max-width: fit-content;
+    padding: 4px 16px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+#dorm_div_lhs>p:nth-child(2){
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -2px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+
+
+
+
+.payment_gateway{
+    border: 0px solid red;
+    
+    
+}
+
+.payment_gateway>img{
+    width: 100px;
+    height: 25px;
+}
