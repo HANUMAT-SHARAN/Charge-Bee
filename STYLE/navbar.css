@@ -85,7 +85,7 @@ padding-top:20px;
     gap:20px;
     background-color: rgb(236, 232, 232);
     border-radius: 20px;
-    display: none;
+  
     position: absolute;
 }
 #solutions>div{
