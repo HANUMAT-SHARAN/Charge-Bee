@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grow smarter</title>
     <link rel="stylesheet" href="../STYLE/index.css">
+    <link rel="stylesheet" href="../STYLE/navbar.css">
 
     <script
 src="https://kit.fontawesome.com/24c494a6b6.js"
@@ -13,6 +14,11 @@ crossorigin="anonymous">
 </script>
 </head>
 <body>
+
+       <div id="navbar">
+              <!-- import navbar hear -->
+       </div>
+
        <div id="subscription">
           <!-- first div -->
             <div id="change_image">
@@ -33,7 +39,7 @@ crossorigin="anonymous">
                     Get a Demo
                     </p>
                   <div>
-                    <button id="getdemo">Get a Demo &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+                    <button id="getdemobtn">Get a Demo &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
                     <button id="signup">Sign up for free &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
                   </div>
                 </div>
@@ -87,16 +93,45 @@ crossorigin="anonymous">
              <div id="freedom">
                   <h1>Designed to go Beyond Billing.</h1>
                   <p>Get the freedom to experiment, launch, and scale strategies as fast as you can think of them.</p>
+                  <div>
+                    <img src="https://sovos.com/wp-content/uploads/2022/05/FinanceOperations-300x300.png.webp" alt="">
+                  </div>
              </div>
              <div id="rethink">
-                    <div>
+                    <div class="cards">
                           <div>
                             <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/icon/rethink-pricing.svg">
                           </div>
-                          <p>Rethink Pricing</p>
-                          <p>Pricing models. Grandfathering. One-click roll-back. Doesn't get easier!</p>
-                          <p>Learn more <i class="fa-solid fa-arrow-trend-up"></i></p>
+                          <p class="cardtext">Rethink Pricing</p>
+                          <p class="models">Pricing models. Grandfathering. One-click roll-back. Doesn't get easier!</p>
+                          <p class="learnmore">Learn more <i class="fa-solid fa-arrow-trend-up"></i></p>
                     </div>
+                    <div class="cards">
+                      <div>
+                        <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/icon/scale-globally.svg">
+                      </div>
+                      <p class="cardtext">Scale Globally</p>
+                      <p class="models">Currencies, compliance & taxes, all handled already.</p>
+                      <p class="learnmore">Learn more <i class="fa-solid fa-arrow-trend-up"></i></p>
+                </div>
+                <div class="cards">
+                  <div>
+                    <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/icon/capture-new-segments.svg">
+                  </div>
+                  <p class="cardtext">Capture New Segments</p>
+                  <p class="models">March upmarket, go product-led, and everywhere between.</p>
+                  <p class="learnmore">Learn more <i class="fa-solid fa-arrow-trend-up"></i></p>
+            </div>
+            <div class="cards">
+              <div>
+                <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/icon/launch-into-subscriptions.svg">
+              </div>
+              <p class="cardtext">Launch into Subscriptions</p>
+              <p class="models">Pilot a recurring revenue model without breaking what's working.</p>
+              <p class="learnmore">Learn more <i class="fa-solid fa-arrow-trend-up"></i></p>
+        </div>
+                
+            
                     
                     
              </div>
@@ -104,4 +139,4 @@ crossorigin="anonymous">
 </body>
 </html>
 
-<script src="../JS/index.js"></script>
+<script src="../JS/index.js" type="module"></script>
