@@ -1,141 +1,159 @@
-#navbar{
-    display:grid;
-grid-template-columns: repeat(2,1fr);
-  position: fixed;  
+#navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
   background-color: rgb(22, 0, 221);
+  color: white;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#prohover,
+#logo,
+#prices,
+#sol,
+#customers,
+#res,
+#partner {
+  border-radius: 15px;
+}
+#prohover:hover,
+#logo:hover,
+#prices:hover,
+#sol:hover,
+#customers:hover,
+#res:hover,
+#partner:hover {
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+  background-color: rgb(10, 10, 46);
+  transition: 0.8s;
+}
+#logo {
+  width: 12%;
+  border-radius: 256px;
+}
+#navbar > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#navbar > :nth-child(2) {
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 
+  padding-left: 200px;
+}
+#lock {
+  width: 15%;
+}
+#globe {
+  width: 14%;
+}
+#getdemo {
+  background-color: #ee7549;
 
+  font-size: 20px;
+  padding: 6px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: white;
 }
-body{
-    margin:0px;
-    padding:0px;
+#product {
+  display: grid;
+  transition: 0.4ms;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 100px;
+  display: none;
+  background-color: rgb(236, 232, 232);
+  border-radius: 20px;
+  position: absolute;
+  position: fixed;
+  gap: 20px;
 }
-#logo{
-    width:12%;
-    border-radius: 256px;
+#product > div:hover {
+  transition: 0.8s;
+  background-color: rgb(223, 168, 248);
 }
-#navbar>div{
-    
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-#navbar>:nth-child(2){
-   
- 
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-     
-    padding-left: 200px;
-
-}
-#lock{
-    width:15%;
-}
-#globe{
-width: 14%;;
-}
-#getdemo{
-    background-color: #ee7549;
-   
-    font-size: 20px;
-    padding:6px;
-    font-weight: bold;
-    border-radius:4px;
-    color:white
-}
-#product{
-    
-    display:grid;
-    transition: 0.4ms;
-    grid-template-columns: repeat(5,1fr);
-margin-top:100px ;
-    display: none;
-    background-color: rgb(236, 232, 232);
-    border-radius: 20px;
-    position:absolute;
-    position: fixed;
-    
-   
-
-}
-#product h3{
-    color:rgb(0, 0, 0);
-    font-weight: bold;
+#product h3 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 
-#product h4{
-    color:#5C07D1;
-    font-weight:bold;
+#product h4 {
+  color: #5c07d1;
+  font-weight: bold;
 }
-#product>div{
+#product > div {
+  align-items: center;
+  padding-left: 50px;
+  border-radius: 15px;
+  padding-top: 20px;
+}
+#second {
+  width: 300px;
+  line-height: 25px;
+}
 
-align-items: center;
-padding-left: 50px;
-padding-top:20px;
-}
-#second{
-    width: 300px;
-   line-height: 25px;
-}
+#solutions {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  background-color: rgb(236, 232, 232);
+  border-radius: 20px;
 
-#solutions{
-    margin-top:100px ;
-    display:grid;
-    grid-template-columns: repeat(7,1fr);
-    gap:20px;
-    background-color: rgb(236, 232, 232);
-    border-radius: 20px;
-  
-    position: absolute;
-    position: fixed;
+  position: absolute;
+  position: fixed;
 }
-#solutions>div{
-    
-    align-items: center;
-padding-left: 30px;
-padding-top:20px;
+#solutions > div {
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 20px;
+  border-radius: 15px;
 }
-#solutions h4{
-    color:#5C07D1;
+#solutions > div:hover {
+  transition: 0.8s;
+  background-color: rgb(223, 168, 248);
 }
-#resources{
-    margin-top:100px ;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,180px);
-    width:90%;
-    gap:20px;
-    display: none;
-    position: absolute;
-    background-color: rgb(236, 232, 232);
-    border-radius: 20px;
-    position: fixed;
-
+#solutions h4 {
+  color: #5c07d1;
 }
-#resources >div{
-    
-    line-height: 25px;
-    align-items: center;
-    padding-left: 30px;
-    padding-top:10px;
+#resources {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 180px);
+  width: 90%;
+  gap: 20px;
+  display: none;
+  position: absolute;
+  background-color: rgb(236, 232, 232);
+  border-radius: 20px;
+  position: fixed;
 }
-#resources h3{
-    color:#5C07D1;
+#resources > div {
+  line-height: 25px;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 10px;
+  border-radius: 15px;
 }
-#resources >:nth-child(1){
-
-    background-color: rgb(250, 187, 187);
+#resources > div:hover {
+  transition: 0.8s;
+  background-color: rgb(223, 168, 248);
 }
-#resources >:nth-child(1)>h3{
-    color:red;
+#resources h3 {
+  color: #5c07d1;
 }
-#Dividernavbar{
-height:90px;
-
-
-
-
+#resources > :nth-child(1) {
+  background-color: rgb(250, 187, 187);
+}
+#resources > :nth-child(1) > h3 {
+  color: red;
+}
+#Dividernavbar {
+  height: 90px;
 }
