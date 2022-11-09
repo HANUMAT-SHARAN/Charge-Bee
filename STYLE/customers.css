@@ -171,3 +171,34 @@
 #youtubevideo{
     text-align: center;
 }
+#reviews{
+    background-color: #272729;
+  
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: repeat(1,400px);
+    width: 80%;
+    gap:20px;
+    margin:auto;
+    margin-top: 50px;;
+    
+    
+}
+#main{
+    background-color: #272729;
+
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+#reviews>div{
+ 
+    padding: 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+line-height: 40px;
+    background-color: #131312;
+    border-radius: 10px;;
+   
+}
+#reviews img{
+    width:40%;;
+}

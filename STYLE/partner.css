@@ -4,6 +4,7 @@
 }
 
 #title_div{
+    padding-top: 100px;
     background-color: #651aba;
     color: white;
     display: flex;
