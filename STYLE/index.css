@@ -1,8 +1,20 @@
+<<<<<<< HEAD
+=======
+#navbar{
+    z-index: 10000;
+}
+
+>>>>>>> master
 #subscription{
     display: flex; 
     font-family: sans-serif;
     height: 450px;
     width: 95%;
+<<<<<<< HEAD
+=======
+    padding-top:100px;
+   
+>>>>>>> master
 }
 #change_image{
     width: 10%;
@@ -71,7 +83,11 @@
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 #getdemo{
+=======
+#getdemobtn{
+>>>>>>> master
           width: 10rem;
           border-radius: 20px;
           border: none;
@@ -81,7 +97,11 @@
           color: white;
           transition: 0.6s ease-in;
 }
+<<<<<<< HEAD
 #getdemo :hover{
+=======
+#getdemobtn :hover{
+>>>>>>> master
     cursor: pointer;
     transition: 0.4s ease-in;
     padding-left: 10px;
@@ -104,9 +124,15 @@
     cursor: pointer;
 }
 #doublecota{
+<<<<<<< HEAD
    font-size: 100px;
    position: absolute;
    top: 0px;
+=======
+   font-size: 90px;
+   position: absolute;
+   top: 100px;
+>>>>>>> master
    left: 70px;
    z-index: -1;
    opacity: 0.3;
@@ -156,7 +182,69 @@
 
 /* designed part */
 #desigened{
+<<<<<<< HEAD
     display: flex;
+=======
+    width:80%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+#freedom{
+    width: 30%;
+    flex: 3;
+}
+#freedom h1{
+    width: 80%;
+}
+#freedom p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 25px;
+    color: #76769a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#freedom >div img{
+    width: 80%;
+}
+#rethink{
+    width: 70%;
+    flex: 7;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+}
+.cards{
+    padding: 30px 45px;
+    margin: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    font-family: inherit;
+    position: relative;
+    transition: 0.5s;
+}
+#rethink >div:hover{
+    cursor: pointer;
+    transition: 0.7s ease-in;
+    top: -10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+}
+.cardtext{
+    font-size: 18px;
+    font-weight: 600;
+}
+.models{
+    font-size: 18px;
+    color: #76769a;
+}
+.learnmore{
+    padding-left: 50%;
+    font-size: 18px;
+    color: blue;
+    cursor: pointer;
+    
+>>>>>>> master
 }
 
 
@@ -170,10 +258,15 @@
 
 
 
+<<<<<<< HEAD
 
 
 /* for medium screen */
 @media all and (min-width:500px) and (max-width:800px){
+=======
+/* for medium screen */
+@media all and (min-width:500px) and (max-width:900px){
+>>>>>>> master
      /* top portion  */
     #subscription{
         display: flex;
@@ -210,10 +303,50 @@
         bottom: 200px;
     }
     #doublecota{
+<<<<<<< HEAD
         top: 500px; 
         left: 0px;
      }
 }
+=======
+        top: 600px; 
+        left: 0px;
+     }
+
+     /* CARDS */
+     #desigened{
+        flex-direction: column;
+     }
+     #freedom{
+        width: 80%;
+     }
+     #freedom >div img{
+        display: none;
+     }
+     #rethink{
+        width: 100%;
+        display: flex;
+        overflow: auto;
+     }
+     #rethink >div{
+        width: 100%;
+        padding-right: 130px;
+     }
+     .cardtext{
+        width: 150%;
+    }
+    .models{
+        width: 200%;
+    }
+    .learnmore{
+        padding-left: 50%;
+        width: 200%;
+    }
+
+}
+
+
+>>>>>>> master
 /* for small screen */
 @media all and (min-width:300px) and (max-width:500px){
     /* top portion  */
@@ -256,5 +389,13 @@
         top: 500px; 
         left: 0px;
      }
+<<<<<<< HEAD
+=======
+
+     /* CARDS */
+     #freedom{
+        width: 110%;
+     }
+>>>>>>> master
 }
 

@@ -1,0 +1,141 @@
+#navbar{
+    display:grid;
+grid-template-columns: repeat(2,1fr);
+  position: fixed;  
+  background-color: rgb(22, 0, 221);
+
+
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+#logo{
+    width:12%;
+    border-radius: 256px;
+}
+#navbar>div{
+    
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#navbar>:nth-child(2){
+   
+ 
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+     
+    padding-left: 200px;
+
+}
+#lock{
+    width:15%;
+}
+#globe{
+width: 14%;;
+}
+#getdemo{
+    background-color: #ee7549;
+   
+    font-size: 20px;
+    padding:6px;
+    font-weight: bold;
+    border-radius:4px;
+    color:white
+}
+#product{
+    
+    display:grid;
+    transition: 0.4ms;
+    grid-template-columns: repeat(5,1fr);
+margin-top:100px ;
+    display: none;
+    background-color: rgb(236, 232, 232);
+    border-radius: 20px;
+    position:absolute;
+    position: fixed;
+    
+   
+
+}
+#product h3{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#product h4{
+    color:#5C07D1;
+    font-weight:bold;
+}
+#product>div{
+
+align-items: center;
+padding-left: 50px;
+padding-top:20px;
+}
+#second{
+    width: 300px;
+   line-height: 25px;
+}
+
+#solutions{
+    margin-top:100px ;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:20px;
+    background-color: rgb(236, 232, 232);
+    border-radius: 20px;
+  
+    position: absolute;
+    position: fixed;
+}
+#solutions>div{
+    
+    align-items: center;
+padding-left: 30px;
+padding-top:20px;
+}
+#solutions h4{
+    color:#5C07D1;
+}
+#resources{
+    margin-top:100px ;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,180px);
+    width:90%;
+    gap:20px;
+    display: none;
+    position: absolute;
+    background-color: rgb(236, 232, 232);
+    border-radius: 20px;
+    position: fixed;
+
+}
+#resources >div{
+    
+    line-height: 25px;
+    align-items: center;
+    padding-left: 30px;
+    padding-top:10px;
+}
+#resources h3{
+    color:#5C07D1;
+}
+#resources >:nth-child(1){
+
+    background-color: rgb(250, 187, 187);
+}
+#resources >:nth-child(1)>h3{
+    color:red;
+}
+#Dividernavbar{
+height:90px;
+
+
+
+
+}
