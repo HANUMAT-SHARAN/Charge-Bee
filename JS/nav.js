@@ -1,18 +1,35 @@
-// import {navex} from "/Component/navbar.js"
+import {
+  navbarhtml,
+  producthtml,
+  solutionshtml,
+  resourceshtml,
+} from "/Component/navbar.html.js";
+
+let nav = document.querySelector("#navbar");
+let htmlprod = document.querySelector("#product");
+htmlprod.innerHTML = producthtml();
+
+let solut = document.querySelector("#solutions");
+
+solut.innerHTML = solutionshtml();
+
+let reso = document.querySelector("#resources");
+
+reso.innerHTML = resourceshtml();
+
+nav.innerHTML = navbarhtml();
+
+import { navbarscript } from "/Scripts/navbarscript.js";
+
+navbarscript();
+
+// import { navbarhtml,producthtml } from "/Component/navbar.html.js"
 // let nav=document.querySelector("#navbar")
-// nav.innerHTML=navex()
+// nav.innerHTML=navbarhtml()
+// let produc=document.querySelector("#product")
+// produc.innerHTML=producthtml()
 
-// // import {proex} from "/Component/navbar.js"
-// // let prodiv=document.querySelector("#product")
-// // prodiv.innerHTML=proex()
-
-// import {proex} from "/Component/product.js"
-// let prodiv=document.querySelector("#product")
-// prodiv.innerHTML=proex()
-
-
-let nav=document.querySelector("#navbar")
-let prohover = document.querySelector("#prohover");
+/* let prohover = document.querySelector("#prohover");
 let pro = document.querySelector("#product");
 let prices = document.querySelector("#prices");
 let solutions = document.querySelector("#solutions");
@@ -23,9 +40,7 @@ let partner=document.querySelector("#partner")
 let logo=document.querySelector("#logo")
 
 let resources=document.querySelector("#resources")
-window.onmouseover=()=>{
-    nav.style.position="fixed"
-}
+
 
 prohover.onmouseover = () => {
 
@@ -93,3 +108,4 @@ resources.onmouseover = () => {
   resources.onmouseout = () => {
     resources.style.display = "none";
   };
+ */
