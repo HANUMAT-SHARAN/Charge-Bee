@@ -1,0 +1,64 @@
+#subscriptions {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 500px);
+  background-color: #272729;
+}
+#subscriptions > div {
+  padding-left: 80px;
+}
+#subscriptions h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#talk {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 200px;
+  align-items: center;
+}
+
+#talk > :nth-child(1) {
+  border: 3px solid #ee7549;
+  color: #ee7549;
+  padding: 00px 10px 00px 10px;
+}
+
+#talk > :nth-child(2) {
+  color: #c08cde;
+}
+#banner > img {
+  position: absolute;
+  width: 40%;
+  margin-top: 120px;
+  display: block;
+}
+#study {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(1,500px); */
+}
+#study > div {
+  border: 1px solid red;
+
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  line-height: 40px;
+}
+#study > div > div {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-right: 40px;
+}
+#study > div > div > img {
+  width: 15%;
+  border-radius: 50px;
+}
+#study > :nth-child(2) {
+  padding-top: 90px;
+  background-color: #413ba4;
+}
