@@ -14,7 +14,12 @@ const navbarscript = () => {
   window.onmouseover = () => {
     // nav.style.position="fixed"
   };
-
+window.onscroll=()=>{
+  pro.style.display = "none";
+  solutions.style.display = "none";
+  resources.style.display = "none";
+  banner.style.display = "block";
+}
   prohover.onmouseover = () => {
     pro.style.display = "block";
     pro.style.transition = "0.10ms";
@@ -95,3 +100,4 @@ const navbarscript = () => {
 };
 
 export { navbarscript };
+
