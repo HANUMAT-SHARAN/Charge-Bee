@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Overview</title>
+    <style>
+        #carosal_container{
+            background-color: #e1e9fb;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        /* #carosal_container>div:first-child h1{ 
+            font-weight: bolder;
+        } */
+        #carosal{
+            width: 55%;
+            margin: auto;
+            text-align: center;
+            font-size: x-large;
+        }
+        #carosal h1{
+            color: #112653;
+        }
+        /* #carosal_btns{
+            padding-left: 20px;
+        } */
+        #carosal_btns button:first-child{
+            background-color: #112653;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            height: 50px;
+            width: 150px;
+            font-weight: 700;
+            margin-right: 15px;
+        }
+        #carosal_btns button:last-child{
+            background-color: #e1e9fb;
+            color: #112653;
+            padding: 10px;
+            border-radius: 5px;
+            height: 50px;
+            width: 180px;
+            font-weight: 700;
+        }
+
+        /* #carosal span{
+            text-decoration: underline;
+            text-decoration-color: #ffe6ab;
+            text-decoration-thickness: 20px;
+
+            vertical-align:baseline;
+            letter-spacing:-1.4px;
+        } */
+        #carosal p{
+            color: #484a57;
+            font-weight: 100;
+        }
+        #option_container{
+            display: flex;
+            width: 80%;
+            height: 100px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: auto;
+            margin-top: -45px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #option_container h3{
+            width: 10%;
+            margin: auto;
+            color: #313df3;
+        }
+        #seamlessly_container{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            /* height: 300px; */
+            padding: 20px;
+            align-content: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+        #seamlessly_container>div:first-child{
+            width: 20%;
+            text-align: right;
+        }
+        #seamlessly_container>div:last-child{
+            width: 50%;
+            height: 100px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            padding: 30px;
+            margin-left: 50px;
+            /* border: 1px solid red;    */
+        }
+        #seamlessly_container div:last-child>div{
+            width: 300px;
+        }
+        #seamlessly_container~hr{
+            width: 80%;
+            color: grey;
+        }
+        #price_plan{
+            width: 60%;
+            margin: auto;
+            font-weight: 400;
+            color: #81828b;
+            line-height: 25px;
+        }
+        #price_plan h1{
+            width: 50%;
+            color: black;
+        }
+        #price_plan_child{
+            display: flex;
+            padding-right: 50px;
+        }
+        #price_plan_child p{
+            width: 40%;
+            margin-right: 40px;
+        }
+        #price_plan>p{
+            color: #1742f3;
+            font-weight: bold;
+        }
+
+        .margin{
+            /* margin: 50% 0; */
+            margin: 5% 0;
+        }
+        .parallax{
+            width: 100%; 
+            height: 500px; 
+            background-position: center; 
+            /* background-size:cover;  */
+            /* cover */
+            background: url("https://img.freepik.com/premium-photo/man-working-notebook-sitting-cliff-top-mountains_543270-1372.jpg");
+            /* repeat fixed 100%; */
+            /* https://img.freepik.com/premium-photo/man-sitting-alone-with-laptop-shore-beach-sunset-relaxed_535168-1045.jpg */
+            /*  */
+            background-attachment: fixed;
+            background-size: 1800px 800px;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+        }
+        .parallax-inner{
+            /* padding-top: 30%;
+            padding-bottom: 30%; */
+            width: 40%; 
+            color: black;
+            /* text-align: right; */
+        }
+        .parallax-inner h3{
+            /* text-align: center; */
+            font-size: 300%;
+            letter-spacing: 3px;
+            
+        }
+        #four_container{
+            width: 70%;
+            margin: auto;
+            /* padding: 70px; */
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            /* margin-left: 0px; */
+        }
+        #four_container>div{
+            margin: 20px;
+            width: 90%;
+            /* border: 1px solid red; */
+        }
+        #four_container h5{
+            color: #1742f3;
+            font-weight: 600;
+        }
+        #four_container h4,p{
+            color: #484a57;
+        }
+        #codacy{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+        }
+        #codacy div:first-child{
+            margin-top: 60px;
+            margin-bottom: -23px;
+        }
+        #codacy div:last-child>h4,p{
+            color: #484a57;
+        }
+        #codacy_btns{
+            display: flex;
+            
+            /* padding: 10px;
+            padding-right: 40px; */
+        }
+        #codacy_btns>h3{
+            margin-right: 30px;
+            /* font-weight: 900; */
+            color: #1742f3;
+        }
+    </style>
+</head>
+<body>
+    <div id="carosal_container">
+        <div>
+            <h1>  <strong>←</strong>  </h1>
+            <!-- <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftoppng.com%2Ffree-image%2Farrow-pointing-left-PNG-free-PNG-Images_92569&psig=AOvVaw1m_nJfSixlWamWxiFl_4YM&ust=1668157114682000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIi8uNifo_sCFQAAAAAdAAAAABAD" alt=""> -->
+        </div>
+        <div id="carosal">
+            <h1>Subscription Management Software That <span>Helps You Scale Seamlessly</span> </h1>
+            <p>Get the flexibility to manage subscription problems you have today. And the ones that will creep up a year from now.</p>
+            <div id="carosal_btns">
+                <button>Get a Demo → </button>
+                <button>Sign Up for free → </button>
+            </div>
+        </div>
+
+        <div>
+            <h1> <strong>→</strong>  </h1>
+            <!-- <img src="data:image/png;base64,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" alt=""> -->
+        </div>
+
+    </div>
+    <div id="option_container">
+        <h3>Subscription Management</h3>
+        <h3>Billing and Invoicing</h3>
+        <h3>Recurring Payments</h3>
+        <h3>Accounting and Taxes</h3>
+        <h3>Reporting and Analytics</h3>
+    </div>
+    <div id="seamlessly_container">
+        <div>
+            <img src="https://webstatic.chargebee.com/assets/web/535/images/product/common/creation.svg" alt="">
+            <h2>Seamlessly Manage
+                Subscriptions
+                at Scale</h2>
+        </div>
+        <div>
+            <div> <p> <strong>Discover new revenue opportunities</strong> and turn them into outcomes with endless options to experiment with pricing models.</p> </div>
+            <div> <p> <strong>Retain more customers</strong> with proactive engagement, self-service, and churn management features.</p> </div>
+            <div> <p> <strong>Get a unified view</strong>  of all subscription and customer data in one place and engage with more context.</p> </div>
+            <div> <p> <strong>Create upsell opportunities</strong> through addon recommendations and product bundles.</p> </div>
+        </div>
+    </div>
+    <hr>
+
+
+    <div id="price_plan">
+        <h3>Plan and Pricing Management</h3>
+        <h1>Price the Way That Makes Sense for Your Business</h1>
+        <div id="price_plan_child">
+            <p>New revenue opportunities could be hiding behind untested pricing. Chargebee lets you roll out new pricing plans rapidly with flexible billing frequencies. Whether you follow a flat-fee, pay-as-you-go, or a completely customized subscription pricing model, Chargebee
+                does it all.</p>
+            <img src="https://webstatic.chargebee.com/assets/web/535/images/product/subscription-management/price-the-way-pocket.svg" alt="">
+        </div>
+        <p>Check out the different plans you can configure → </p>
+        <p>Find the right pricing model for you → </p>
+        <p>Package it with recurring and one-time addons → </p>
+    </div>
+
+    <div class="margin"></div>
+    <section class="parallax">
+        <div class="parallax-inner"> 
+            <h3>Trail</h3> 
+            <h4>"Flexibility around subscription types is probably the biggest win — Chargebee cut down time spent managing subscriptions by about 80% compared to our previous process."</h4>
+            <h4>- Nick Allen, Product Manager</h4>
+        </div>
+    </section>
+    <div class="margin"></div>
+    
+    <div id="four_container">
+        <div>
+            <h4>Discounts, Coupons, and Gift Subscriptions</h4>
+            <h1>Enable Sales and Marketing to Acquire More</h1>
+            <p>Run promotional campaigns without hitting operational hiccups, and measure their performance. Leverage the oldest trick in your marketing arsenal - gift subscriptions. Set up a smooth gifting workflow that converts even the recipient.</p>
+            <h5>Explore discount and coupon management → </h5>
+            <h5>Gift Subscriptions → </h5>
+        </div>
+        <div>
+            <h4>Trial Management Suite</h4>
+            <h1>Enable Sales and Marketing to Acquire More</h1>
+            <p>Run promotional campaigns without hitting operational hiccups, and measure their performance. Leverage the oldest trick in your marketing arsenal - gift subscriptions. Set up a smooth gifting workflow that converts even the recipient.</p>
+            <h5>Explore discount and coupon management → </h5>
+            <h5>Gift Subscriptions → </h5>
+        </div>
+        <div>
+            <h4>Discounts, Coupons, and Gift Subscriptions</h4>
+            <h1>Enable Sales and Marketing to Acquire More</h1>
+            <p>Run promotional campaigns without hitting operational hiccups, and measure their performance. Leverage the oldest trick in your marketing arsenal - gift subscriptions. Set up a smooth gifting workflow that converts even the recipient.</p>
+            <h5>Explore discount and coupon management → </h5>
+            <h5>Gift Subscriptions → </h5>
+        </div>
+        <div>
+            <h4>Discounts, Coupons, and Gift Subscriptions</h4>
+            <h1>Enable Sales and Marketing to Acquire More</h1>
+            <p>Run promotional campaigns without hitting operational hiccups, and measure their performance. Leverage the oldest trick in your marketing arsenal - gift subscriptions. Set up a smooth gifting workflow that converts even the recipient.</p>
+            <h5>Explore discount and coupon management → </h5>
+            <h5>Gift Subscriptions → </h5>
+        </div>
+    </div>
+
+    <div id="codacy">
+        <div>
+            <img src="https://webstatic.chargebee.com/assets/web/535/images/product/codacy.svg" alt="">
+        </div>
+        <div>
+            <h4>Checkout and Self-serve Portal</h4>
+            <h1>Create a Stellar Subscriber Experience with a Self-Serve Portal</h1>
+            <p>Chargebee’s secure zero-code checkout creates a sign up experience designed to convert. Plus, let customers manage their subscription data themselves with a customizable customer portal. The best part? Weave the look and feel of your brand consistently across each of these customer-facing elements.</p>
+            <div id="codacy_btns">
+                <h3>Checkout → </h3>
+                <h3>Self-serve Portal → </h3>  
+            </div>         
+        </div>
+    </div>
+</body>
+</html>
