@@ -107,8 +107,6 @@
 
 }
 
-
-
 #become_a_p{
     border-radius: 4px;
     background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%);
@@ -271,3 +269,26 @@
     border: none;
 }
 
+#faq_div{
+    border: 0px solid red;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#faq_div h1{
+    margin-bottom: 30px;
+}
+
+.faq{
+    padding: 5% 2%;
+    text-align: start;
+    /* box-shadow: -10px 10px 10px -0px rgb(123 127 218 / 20%); */
+    margin: 10px;
+}
+
+.faq:hover{
+    background-color: #f8f8ff;
+
+}
