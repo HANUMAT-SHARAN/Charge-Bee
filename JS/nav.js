@@ -6,6 +6,7 @@ import {
 } from "/Component/navbar.html.js";
 
 let nav = document.querySelector("#navbar");
+
 let htmlprod = document.querySelector("#product");
 htmlprod.innerHTML = producthtml();
 
@@ -23,6 +24,16 @@ import { navbarscript } from "/Scripts/navbarscript.js";
 
 navbarscript();
 
+let log=document.querySelector("#logo")
+log.onclick=()=>{
+   window.location.href="../HTML/index.html"
+  console.log(1)
+}
+
+let c=document.querySelector("#customers")
+c.onclick=()=>{
+  window.location.href="../HTML/customers.html"
+}
 // import { navbarhtml,producthtml } from "/Component/navbar.html.js"
 // let nav=document.querySelector("#navbar")
 // nav.innerHTML=navbarhtml()

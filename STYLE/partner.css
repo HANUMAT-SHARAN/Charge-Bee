@@ -1,9 +1,17 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   
 }
 
+.required:after {
+    content:" *";
+    color: red;
+  }
+
 #title_div{
+    padding-top: 100px;
     background-color: #651aba;
     color: white;
     display: flex;
@@ -11,21 +19,30 @@
     font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 #title_div>p{
-    border: 2px solid red;
-    padding: 0.75% 5%;
-    margin: 0px;
+    border: 0px solid red;
+    padding: 1.2% 5%;
 }
 #form_div{
+    border: 0px solid black;
     background: linear-gradient(107.66deg,#4300a3 11.51%,#6100bb 53.97%,#a700f1 85.07%);
-    padding-bottom: 0;
-    margin-bottom: 140px;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    margin-bottom: 200px;
+    /* position: absolute;
+    overflow: hidden; */
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    gap: 8%;
+
+    
+
+    
+    
 }
 #form_div_lhs{
-    padding-top: 0;
+    border: 0px solid red;
+    margin-top: 30%;
     color: #fefefe;
 }
 
@@ -34,31 +51,224 @@
     font-size: 14px;
     background: #522ec4;
     max-width: fit-content;
-    padding: 4px 16px;
+    padding: 10px 16px;
     border-radius: 30px;
     margin-bottom: 10px;
+    
+    
 }
 
-#dorm_div_lhs>p:nth-child(2){
+#form_div_lhs>p:nth-child(2){
+    border: 0px solid gray;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 60px;
     letter-spacing: -2px;
-    line-height: 1.5;
-    margin-bottom: 14px;
-    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 5%;
+    padding-right: 40%;
+}
+
+#form_div_lhs>p:nth-child(3){
+    border: 0px solid cadetblue;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: .1px;
+   
+}
+#form_div_rhs{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0px solid red;
+    background-color: white;
+    border-radius: 5px;
+    padding: 9% 8%;
+    margin-top: 10%;
+    margin-bottom: -15%;
+
+}
+
+#form p:first-child{
+
+    font-weight: 750;
+    margin-bottom: 5%;
+}
+#form p:last-child{
+    font-size: 12px;
+    border: 0px solid black;
+    width: 72%;
+    opacity: 75%;
+    margin-bottom: 5%;
+}
+
+#form input {
+    width: 100%;
+    height: 35px;
+
+    margin: 2% 0%;
+
 }
 
 
 
+#become_a_p{
+    border-radius: 4px;
+    background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 50%;
+    border: none;
+}
 
+.Partners{
+    border: 0px solid rebeccapurple;
+    text-align: center;
+    justify-content: center;
+    margin:0% 22%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    line-height: 55px;
+    gap: 12px;
+}
+
+.title1{
+    background: #eee7ff;
+    border-radius: 30px;
+    padding: 4px 20px;
+    margin-bottom: 16px;
+    max-width: fit-content;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #531fc9;
+    margin: auto;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #64648c;
+    gap: 12px;
+    padding: 0px 45px;
+}
+
+.alliance_1_div{
+    width: 65%;
+    margin: auto;
+    border: 0px solid brown;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+    padding: 20px 20px;
+    overflow: auto;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+}
 
 .payment_gateway{
-    border: 0px solid red;
-    
-    
+  
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 150px;
+    background: #fff;
+    box-shadow: -10px 10px 10px -0px rgb(123 127 218 / 20%);
+    border-radius: 8px;
+    position: relative;
+    transform: translateY(0);
+    transition: all ease .5s;
+}
+.payment_gateway>img{
+    max-width: 200px;
+    max-height: 40px;
+}
+.edit_img{
+   zoom: 350%;
 }
 
-.payment_gateway>img{
-    width: 100px;
-    height: 25px;
+#alliance_1_div img{
+    width:50%;
+    height: 30%;
+
 }
+
+#why_box{
+    background-color: #f8f8ff;
+    padding: 5% 0%;
+    text-align: center;
+}
+    
+#sell_div{
+    margin: auto;
+    border: 0px solid brown;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 40px;
+    padding: 2% 10%;
+    overflow: auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+}
+
+.sell_div-img img{
+    width: 20%;
+}
+
+.become_part_btn{
+    border-radius: 4px;
+    background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 40%;
+    padding: 12px 30px;   
+    border: none; 
+}
+
+#yt_video{
+    border: 1px solid black;
+    text-align: center;
+    padding: 8% 10%;
+    padding-bottom: 8%;
+    line-height: 80px;
+    font-size: larger;
+}
+#iframe{
+    margin:3% ;
+}
+
+#goal{
+    color: white;
+    background: linear-gradient(255.56deg,#9401e2 12.79%,#4e01ab 53.77%);
+    padding: 5% 25%;
+    /* position: relative;
+    overflow: hidden; */
+    text-align: center;
+
+
+}
+#goal h1{
+    font-size: 45px;
+    border: 0px solid red;
+    padding: 0% 15%;
+}
+#goal p{
+    margin: 5% 0%;
+    font-size: 20px;
+}
+
+#goal button{
+    background: #913ada;
+    border: none;
+}
+
