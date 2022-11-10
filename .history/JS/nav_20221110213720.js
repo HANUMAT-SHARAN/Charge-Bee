@@ -34,10 +34,7 @@ let c = document.querySelector("#customers");
 c.onclick = () => {
   window.location.href = "../HTML/customers.html";
 };
-let prices=document.querySelector("#prices")
-prices.onclick=()=>{
-  window.location.href="../HTML/pricing.html"
-}
+
 // import { navbarhtml,producthtml } from "/Component/navbar.html.js"
 // let nav=document.querySelector("#navbar")
 // nav.innerHTML=navbarhtml()

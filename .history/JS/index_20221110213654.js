@@ -31,7 +31,7 @@ c.onclick = () => {
 };
 let prices=document.querySelector("#prices")
 prices.onclick=()=>{
-  window.location.href="../HTML/pricing.html"
+  window.location.href="../HTML/"
 }
 
 

@@ -29,10 +29,7 @@ let c = document.querySelector("#customers");
 c.onclick = () => {
   window.location.href = "../HTML/customers.html";
 };
-let prices=document.querySelector("#prices")
-prices.onclick=()=>{
-  window.location.href="../HTML/pricing.html"
-}
+let prices=document.querySelector()
 
 
 let imagesarr=[`<div class="picture">

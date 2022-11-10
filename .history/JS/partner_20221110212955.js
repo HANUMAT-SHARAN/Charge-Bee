@@ -37,9 +37,5 @@ import {
   partner.onclick = () => {
     window.location.href = "../HTML/partner.html";
   };
-  let prices=document.querySelector("#prices")
-prices.onclick=()=>{
-  window.location.href="../HTML/pricing.html"
-}
   
   

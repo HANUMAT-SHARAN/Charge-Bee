@@ -46,10 +46,6 @@ let partner = document.querySelector("#partner");
 partner.onclick = () => {
   window.location.href = "../HTML/partner.html";
 };
-let prices=document.querySelector("#prices")
-prices.onclick=()=>{
-  window.location.href="../HTML/pricing.html"
-}
 
 let usd_btn = document.getElementById("usd_btn");
 usd_btn.onclick = () => {
