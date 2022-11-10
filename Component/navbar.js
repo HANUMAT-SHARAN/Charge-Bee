@@ -18,11 +18,11 @@ const navbarhtml = () => {
       />
       English
     </h3>
-    <h3>
+    <h3 id="log">
       <img
         id="lock"
-        src="https://cdn0.iconfinder.com/data/icons/security-double-color-red-and-black-vol-3/53/security__lock__private__protect-64.png"
-        alt=""
+        src="https://cdn0.iconfinder.com/data/icons/security-double-color-red-and-black-vol-3/52/security__lock__private__protect-64.png"
+        alt="j"
       />
       Login
     </h3>
