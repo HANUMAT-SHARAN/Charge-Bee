@@ -1,8 +1,8 @@
-const navbarhtml=()=>{
-    return `<div>
+const navbarhtml = () => {
+  return `<div>
     <img id="logo" src="https://i.ibb.co/z8Z7WjF/POWER-B.png" alt="logo" />
     <div id="prohover"><h3>Product</h3></div>
-    <div id="prices"><h3>Prices</h3></div>
+    <div id="prices"><h3>Pricing</h3></div>
     <div id="sol"><h3>Solutions</h3></div>
     <div id="customers"><h3>Customers</h3></div>
     <div id="res"> <h3>Resources</h3></div>
@@ -27,11 +27,11 @@ const navbarhtml=()=>{
       Login
     </h3>
     <h3><button id="getdemo">Get a Demo></button></h3>
-  </div>`
-}
+  </div>`;
+};
 
-const producthtml=()=>{
-    return `<div>
+const producthtml = () => {
+  return `<div>
     <h3>Subscription Management</h3>
     <h4>Overview</h4>
     <h4>Create & Manage Plans</h4>
@@ -88,10 +88,10 @@ const producthtml=()=>{
       more.
     </h4>
     <h4>Explore all features</h4>
-  </div>`
-}
-const solutionshtml=()=>{
-    return `<div>
+  </div>`;
+};
+const solutionshtml = () => {
+  return `<div>
     <h3>By Role</h3>
     <h4>Finance</h4>
     <h4>Sales</h4>
@@ -129,11 +129,11 @@ const solutionshtml=()=>{
     <h4>Australia</h4>
     <h4>India</h4>
   </div>
-  <div></div>`
-}
+  <div></div>`;
+};
 
-const resourceshtml=()=>{
-    return ` <div>
+const resourceshtml = () => {
+  return ` <div>
 
 
     <h4> Learn everything that falls under the umbrella of subscriptions.</h4>
@@ -174,8 +174,7 @@ const resourceshtml=()=>{
    <div>
     <h4> Gartner Peer Insights helps enterprise end-users make better software decisions. See what enterprises are saying about Chargebee.</h4>
 <h3>Gartner Peer Reviews</h3>
-   </div>`
-}
+   </div>`;
+};
 
-
-export {navbarhtml,producthtml,solutionshtml,resourceshtml}
+export { navbarhtml, producthtml, solutionshtml, resourceshtml };
