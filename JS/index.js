@@ -2,6 +2,7 @@
 import {navbarhtml,producthtml,solutionshtml,resourceshtml} from "../Component/navbar.html.js";
 document.getElementById("navbar").innerHTML=navbarhtml()
 
+
 let imagesarr=[`<div class="picture">
 <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/customers/jose-bolanos.webp" alt="">
 <div class="pappu">
