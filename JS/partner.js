@@ -3,7 +3,7 @@ import {
     producthtml,
     solutionshtml,
     resourceshtml,
-  } from "/Component/navbar.html.js";
+  } from "/Component/navbar.js";
   
   let nav = document.querySelector("#navbar");
   
@@ -37,5 +37,9 @@ import {
   partner.onclick = () => {
     window.location.href = "../HTML/partner.html";
   };
+  let prices=document.querySelector("#prices")
+prices.onclick=()=>{
+  window.location.href="../HTML/pricing.html"
+}
   
   
