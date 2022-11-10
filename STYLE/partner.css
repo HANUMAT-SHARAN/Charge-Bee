@@ -292,3 +292,14 @@
     background-color: #f8f8ff;
 
 }
+
+
+#sliding_box{
+    border: 0px solid black;
+    height: 200px;
+    margin: auto;
+    display: grid;
+    place-items: 150px;
+    margin-top: 150px;
+    overflow: hidden;
+}
