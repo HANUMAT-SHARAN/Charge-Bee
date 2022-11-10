@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+import {
+  navbarhtml,
+  producthtml,
+  solutionshtml,
+  resourceshtml,
+} from "/Component/navbar.js";
+=======
 // import {
 //   navbarhtml,
 //   producthtml,
 //   solutionshtml,
 //   resourceshtml,
 // } from "/Component/navbar.html.js";
+>>>>>>> d4ef93d0bc02c7d9afdf97662a8b1b9cbdaee581
 
 // let nav = document.querySelector("#navbar");
 
