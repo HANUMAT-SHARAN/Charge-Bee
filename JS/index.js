@@ -61,3 +61,30 @@ let headingtext=document.getElementById("headingtext");
       },3000)      
 }
 slideshow();
+
+//SCROLLING PART
+window.addEventListener("scroll",()=>{
+      let elem=document.getElementById("stckybar");
+     const sizex=window.scrollY;
+     const sizey=window.innerWidth;
+     console.log(sizex)
+   
+    if(sizex >=1804  && sizey>500 &&sizex <=4500){
+      elem.style.position="fixed";
+      elem.style.top="0px";
+      elem.style.left="5%";
+      elem.style.backgroundColor="white";
+      elem.style.transition="0.5s ease-out"
+    }else{
+      elem.style.transition="0.5s ease-in"
+      elem.style.position="relative";
+      elem.style.left="0%";
+    }
+})
+
+ document.getElementById("experience").addEventListener("click",()=>{
+  let elem=document.getElementById("scrool55")
+         elem.scrollIntoView();
+        
+ })
+ 
