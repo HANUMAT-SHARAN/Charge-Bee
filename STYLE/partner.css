@@ -269,5 +269,26 @@
     border: none;
 }
 
+#faq_div{
+    border: 0px solid red;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#faq_div h1{
+    margin-bottom: 30px;
+}
+
+.faq{
+    padding: 5% 2%;
+    text-align: start;
+    /* box-shadow: -10px 10px 10px -0px rgb(123 127 218 / 20%); */
+    margin: 10px;
+}
+
+.faq:hover{
+    background-color: #f8f8ff;
 
 }
