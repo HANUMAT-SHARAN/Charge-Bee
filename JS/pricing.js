@@ -38,333 +38,315 @@ partner.onclick = () => {
   window.location.href = "../HTML/partner.html";
 };
 
- 
- let usd_btn = document.getElementById("usd_btn");
-  usd_btn.onclick = () =>{
-    usdconversion();
-  }
+let usd_btn = document.getElementById("usd_btn");
+usd_btn.onclick = () => {
+  usdconversion();
+};
 
-  let eur_btn = document.getElementById("eur_btn");
-  eur_btn.onclick = () =>{
-    eurconversion();
-  }
+let eur_btn = document.getElementById("eur_btn");
+eur_btn.onclick = () => {
+  eurconversion();
+};
 
-  let gbp_btn = document.getElementById("gbp_btn");
-  gbp_btn.onclick = () =>{
-    gbpconversion();
-  }
+let gbp_btn = document.getElementById("gbp_btn");
+gbp_btn.onclick = () => {
+  gbpconversion();
+};
 
+let aud_btn = document.getElementById("aud_btn");
+aud_btn.onclick = () => {
+  audconversion();
+};
 
-  let aud_btn = document.getElementById("aud_btn");
-  aud_btn.onclick = () =>{
-    audconversion();
-  }
+let cad_btn = document.getElementById("cad_btn");
+cad_btn.onclick = () => {
+  cadconversion();
+};
 
-  let cad_btn = document.getElementById("cad_btn");
-  cad_btn.onclick = () =>{
-    cadconversion();
-  }
+let inr_btn = document.getElementById("inr_btn");
+inr_btn.onclick = () => {
+  inrconversion();
+};
 
-  let inr_btn = document.getElementById("inr_btn");
-  inr_btn.onclick = () =>{
-    inrconversion();
-  }
+const usdconversion = () => {
+  //Launch
+  let currency_launch = document.getElementById("currency_launch");
+  currency_launch.innerHTML = null;
 
-const usdconversion = () =>{
+  let currency_id_launch = document.createElement("h4");
+  currency_id_launch.innerText = "USD";
 
-    //Launch 
-    let currency_launch = document.getElementById("currency_launch");
-    currency_launch.innerHTML = null;
+  let month_amount_launch = document.createElement("h2");
+  month_amount_launch.innerText = "0/mo";
 
-    let currency_id_launch = document.createElement("h4");
-    currency_id_launch.innerText = "USD"
+  let para_launch = document.createElement("p");
+  para_launch.innerText =
+    "for your first USD 100k in revenue What happens when I hit USD 100k?";
 
-    let month_amount_launch = document.createElement("h2");
-    month_amount_launch.innerText = "0/mo";
+  //Rise
+  let currency_rise = document.getElementById("currency_rise");
+  currency_rise.innerHTML = null;
 
-    let para_launch = document.createElement("p");
-    para_launch.innerText = "for your first USD 100k in revenue What happens when I hit USD 100k?"
-  
+  let currency_id_rise = document.createElement("h4");
+  currency_id_rise.innerText = "USD";
 
-    //Rise
-    let currency_rise = document.getElementById("currency_rise");
-    currency_rise.innerHTML = null;
+  let month_amount_rise = document.createElement("h2");
+  month_amount_rise.innerText = "249/mo";
 
-    let currency_id_rise = document.createElement("h4");
-    currency_id_rise.innerText = "USD"
+  let para_rise = document.createElement("p");
+  para_rise.innerText = "includes USD 600K/yr revenue 0.6% of overage revenue";
 
-    let month_amount_rise = document.createElement("h2");
-    month_amount_rise.innerText = "249/mo";
+  //Scale
+  let currency_scale = document.getElementById("currency_scale");
+  currency_scale.innerHTML = null;
 
-    let para_rise = document.createElement("p");
-    para_rise.innerText = "includes USD 600K/yr revenue 0.6% of overage revenue"
-  
-        
-    //Scale
-    let currency_scale = document.getElementById("currency_scale");
-    currency_scale.innerHTML = null;
+  let currency_id_scale = document.createElement("h4");
+  currency_id_scale.innerText = "USD";
 
-    let currency_id_scale = document.createElement("h4");
-    currency_id_scale.innerText = "USD"
+  let month_amount_scale = document.createElement("h2");
+  month_amount_scale.innerText = "549/mo";
 
-    let month_amount_scale = document.createElement("h2");
-    month_amount_scale.innerText = "549/mo";
+  let para_scale = document.createElement("p");
+  para_scale.innerText =
+    "includes USD 1.2M/yr revenue 0.75% of overage revenue";
 
-    let para_scale = document.createElement("p");
-    para_scale.innerText = "includes USD 1.2M/yr revenue 0.75% of overage revenue"
-  
+  currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
+  currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
+  currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+};
 
-    currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
-    currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
-    currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+const eurconversion = () => {
+  //Launch
+  let currency_launch = document.getElementById("currency_launch");
+  currency_launch.innerHTML = null;
 
-}
+  let currency_id_launch = document.createElement("h4");
+  currency_id_launch.innerText = "EUR";
 
-const eurconversion = () =>{
+  let month_amount_launch = document.createElement("h2");
+  month_amount_launch.innerText = "0/mo";
 
-    //Launch 
-    let currency_launch = document.getElementById("currency_launch");
-    currency_launch.innerHTML = null;
+  let para_launch = document.createElement("p");
+  para_launch.innerText =
+    "for your first EUR 90k in revenue What happens when I hit EUR 90k?";
 
-    let currency_id_launch = document.createElement("h4");
-    currency_id_launch.innerText = "EUR"
+  //Rise
+  let currency_rise = document.getElementById("currency_rise");
+  currency_rise.innerHTML = null;
 
-    let month_amount_launch = document.createElement("h2");
-    month_amount_launch.innerText = "0/mo";
+  let currency_id_rise = document.createElement("h4");
+  currency_id_rise.innerText = "EUR";
 
-    let para_launch = document.createElement("p");
-    para_launch.innerText = "for your first EUR 90k in revenue What happens when I hit EUR 90k?"
-  
+  let month_amount_rise = document.createElement("h2");
+  month_amount_rise.innerText = "249/mo";
 
-    //Rise
-    let currency_rise = document.getElementById("currency_rise");
-    currency_rise.innerHTML = null;
+  let para_rise = document.createElement("p");
+  para_rise.innerText = "includes EUR 600K/yr revenue 0.6% of overage revenue";
 
-    let currency_id_rise = document.createElement("h4");
-    currency_id_rise.innerText = "EUR"
+  //Scale
+  let currency_scale = document.getElementById("currency_scale");
+  currency_scale.innerHTML = null;
 
-    let month_amount_rise = document.createElement("h2");
-    month_amount_rise.innerText = "249/mo";
+  let currency_id_scale = document.createElement("h4");
+  currency_id_scale.innerText = "EUR";
 
-    let para_rise = document.createElement("p");
-    para_rise.innerText = "includes EUR 600K/yr revenue 0.6% of overage revenue"
+  let month_amount_scale = document.createElement("h2");
+  month_amount_scale.innerText = "549/mo";
 
-        
-    //Scale
-    let currency_scale = document.getElementById("currency_scale");
-    currency_scale.innerHTML = null;
+  let para_scale = document.createElement("p");
+  para_scale.innerText =
+    "includes EUR 1.2M/yr revenue 0.75% of overage revenue";
 
-    let currency_id_scale = document.createElement("h4");
-    currency_id_scale.innerText = "EUR"
+  currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
+  currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
+  currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+};
 
-    let month_amount_scale = document.createElement("h2");
-    month_amount_scale.innerText = "549/mo";
+const gbpconversion = () => {
+  //Launch
+  let currency_launch = document.getElementById("currency_launch");
+  currency_launch.innerHTML = null;
 
-    let para_scale = document.createElement("p");
-    para_scale.innerText = "includes EUR 1.2M/yr revenue 0.75% of overage revenue"
-  
+  let currency_id_launch = document.createElement("h4");
+  currency_id_launch.innerText = "GBP";
 
-    currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
-    currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
-    currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+  let month_amount_launch = document.createElement("h2");
+  month_amount_launch.innerText = "0/mo";
 
-}
+  let para_launch = document.createElement("p");
+  para_launch.innerText =
+    "for your first GBP 80k in revenue What happens when I hit GBP 80k?";
 
-const gbpconversion = () =>{
+  //Rise
+  let currency_rise = document.getElementById("currency_rise");
+  currency_rise.innerHTML = null;
 
-    //Launch    
-    let currency_launch = document.getElementById("currency_launch");
-    currency_launch.innerHTML = null;
+  let currency_id_rise = document.createElement("h4");
+  currency_id_rise.innerText = "GBP";
 
-    let currency_id_launch = document.createElement("h4");
-    currency_id_launch.innerText = "GBP"
+  let month_amount_rise = document.createElement("h2");
+  month_amount_rise.innerText = "199/mo";
 
-    let month_amount_launch = document.createElement("h2");
-    month_amount_launch.innerText = "0/mo";
+  let para_rise = document.createElement("p");
+  para_rise.innerText = "includes GBP 480K/yr revenue 0.6% of overage revenue";
 
-    let para_launch = document.createElement("p");
-    para_launch.innerText = "for your first GBP 80k in revenue What happens when I hit GBP 80k?"
-  
-  
-    //Rise
-    let currency_rise = document.getElementById("currency_rise");
-    currency_rise.innerHTML = null;
+  //Scale
+  let currency_scale = document.getElementById("currency_scale");
+  currency_scale.innerHTML = null;
 
-    let currency_id_rise = document.createElement("h4");
-    currency_id_rise.innerText = "GBP"
+  let currency_id_scale = document.createElement("h4");
+  currency_id_scale.innerText = "GBP";
 
-    let month_amount_rise = document.createElement("h2");
-    month_amount_rise.innerText = "199/mo";
+  let month_amount_scale = document.createElement("h2");
+  month_amount_scale.innerText = "379/mo";
 
-    let para_rise = document.createElement("p");
-    para_rise.innerText = "includes GBP 480K/yr revenue 0.6% of overage revenue"
-  
-        
-    //Scale
-    let currency_scale = document.getElementById("currency_scale");
-    currency_scale.innerHTML = null;
+  let para_scale = document.createElement("p");
+  para_scale.innerText =
+    "includes GBP 960K/yr revenue 0.75% of overage revenue";
 
-    let currency_id_scale = document.createElement("h4");
-    currency_id_scale.innerText = "GBP"
+  currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
+  currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
+  currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+};
 
-    let month_amount_scale = document.createElement("h2");
-    month_amount_scale.innerText = "379/mo";
+const audconversion = () => {
+  //Launch
+  let currency_launch = document.getElementById("currency_launch");
+  currency_launch.innerHTML = null;
 
-    let para_scale = document.createElement("p");
-    para_scale.innerText = "includes GBP 960K/yr revenue 0.75% of overage revenue"
-  
+  let currency_id_launch = document.createElement("h4");
+  currency_id_launch.innerText = "AUD";
 
-    currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
-    currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
-    currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+  let month_amount_launch = document.createElement("h2");
+  month_amount_launch.innerText = "0/mo";
 
-}
+  let para_launch = document.createElement("p");
+  para_launch.innerText =
+    "for your first AUD 140k in revenue What happens when I hit AUD 140k?";
 
-const audconversion = () =>{
+  //Rise
+  let currency_rise = document.getElementById("currency_rise");
+  currency_rise.innerHTML = null;
 
-    //Launch 
-    let currency_launch = document.getElementById("currency_launch");
-    currency_launch.innerHTML = null;
+  let currency_id_rise = document.createElement("h4");
+  currency_id_rise.innerText = "AUD";
 
-    let currency_id_launch = document.createElement("h4");
-    currency_id_launch.innerText = "AUD"
+  let month_amount_rise = document.createElement("h2");
+  month_amount_rise.innerText = "359/mo";
 
-    let month_amount_launch = document.createElement("h2");
-    month_amount_launch.innerText = "0/mo";
+  let para_rise = document.createElement("p");
+  para_rise.innerText = "includes AUD 840K/yr revenue 0.6% of overage revenue";
 
-    let para_launch = document.createElement("p");
-    para_launch.innerText = "for your first AUD 140k in revenue What happens when I hit AUD 140k?"
-  
+  //Scale
+  let currency_scale = document.getElementById("currency_scale");
+  currency_scale.innerHTML = null;
 
-    //Rise
-    let currency_rise = document.getElementById("currency_rise");
-    currency_rise.innerHTML = null;
+  let currency_id_scale = document.createElement("h4");
+  currency_id_scale.innerText = "AUD";
 
-    let currency_id_rise = document.createElement("h4");
-    currency_id_rise.innerText = "AUD"
+  let month_amount_scale = document.createElement("h2");
+  month_amount_scale.innerText = "729/mo";
 
-    let month_amount_rise = document.createElement("h2");
-    month_amount_rise.innerText = "359/mo";
+  let para_scale = document.createElement("p");
+  para_scale.innerText =
+    "includes AUD 1.56M/yr revenue 0.75% of overage revenue";
 
-    let para_rise = document.createElement("p");
-    para_rise.innerText = "includes AUD 840K/yr revenue 0.6% of overage revenue"
-  
-        
-    //Scale
-    let currency_scale = document.getElementById("currency_scale");
-    currency_scale.innerHTML = null;
+  currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
+  currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
+  currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+};
 
-    let currency_id_scale = document.createElement("h4");
-    currency_id_scale.innerText = "AUD"
+const cadconversion = () => {
+  //Launch
+  let currency_launch = document.getElementById("currency_launch");
+  currency_launch.innerHTML = null;
 
-    let month_amount_scale = document.createElement("h2");
-    month_amount_scale.innerText = "729/mo";
+  let currency_id_launch = document.createElement("h4");
+  currency_id_launch.innerText = "CAD";
 
-    let para_scale = document.createElement("p");
-    para_scale.innerText = "includes AUD 1.56M/yr revenue 0.75% of overage revenue"
-  
+  let month_amount_launch = document.createElement("h2");
+  month_amount_launch.innerText = "0/mo";
 
-    currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
-    currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
-    currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+  let para_launch = document.createElement("p");
+  para_launch.innerText =
+    "for your first CAD 130k in revenue What happens when I hit CAD 130k?";
 
-}
+  //Rise
+  let currency_rise = document.getElementById("currency_rise");
+  currency_rise.innerHTML = null;
 
-const cadconversion = () =>{
+  let currency_id_rise = document.createElement("h4");
+  currency_id_rise.innerText = "CAD";
 
-    //Launch 
-    let currency_launch = document.getElementById("currency_launch");
-    currency_launch.innerHTML = null;
+  let month_amount_rise = document.createElement("h2");
+  month_amount_rise.innerText = "329/mo";
 
-    let currency_id_launch = document.createElement("h4");
-    currency_id_launch.innerText = "CAD"
+  let para_rise = document.createElement("p");
+  para_rise.innerText = "includes CAD 720K/yr revenue 0.6% of overage revenue";
 
-    let month_amount_launch = document.createElement("h2");
-    month_amount_launch.innerText = "0/mo";
+  //Scale
+  let currency_scale = document.getElementById("currency_scale");
+  currency_scale.innerHTML = null;
 
-    let para_launch = document.createElement("p");
-    para_launch.innerText = "for your first CAD 130k in revenue What happens when I hit CAD 130k?"
-  
+  let currency_id_scale = document.createElement("h4");
+  currency_id_scale.innerText = "AUD";
 
-    //Rise
-    let currency_rise = document.getElementById("currency_rise");
-    currency_rise.innerHTML = null;
+  let month_amount_scale = document.createElement("h2");
+  month_amount_scale.innerText = "599/mo";
 
-    let currency_id_rise = document.createElement("h4");
-    currency_id_rise.innerText = "CAD"
+  let para_scale = document.createElement("p");
+  para_scale.innerText =
+    "includes CAD 1.56M/yr revenue 0.75% of overage revenue";
 
-    let month_amount_rise = document.createElement("h2");
-    month_amount_rise.innerText = "329/mo";
+  currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
+  currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
+  currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+};
 
-    let para_rise = document.createElement("p");
-    para_rise.innerText = "includes CAD 720K/yr revenue 0.6% of overage revenue"
-  
-    
-    //Scale
-    let currency_scale = document.getElementById("currency_scale");
-    currency_scale.innerHTML = null;
+const inrconversion = () => {
+  //Launch
+  let currency_launch = document.getElementById("currency_launch");
+  currency_launch.innerHTML = null;
 
-    let currency_id_scale = document.createElement("h4");
-    currency_id_scale.innerText = "AUD"
+  let currency_id_launch = document.createElement("h4");
+  currency_id_launch.innerText = "INR";
 
-    let month_amount_scale = document.createElement("h2");
-    month_amount_scale.innerText = "599/mo";
+  let month_amount_launch = document.createElement("h2");
+  month_amount_launch.innerText = "0/mo";
 
-    let para_scale = document.createElement("p");
-    para_scale.innerText = "includes CAD 1.56M/yr revenue 0.75% of overage revenue";
-  
+  let para_launch = document.createElement("p");
+  para_launch.innerText =
+    "for your first INR 80L in revenue What happens when I hit INR 80L?";
 
-    currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
-    currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
-    currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+  //Rise
+  let currency_rise = document.getElementById("currency_rise");
+  currency_rise.innerHTML = null;
 
-}
+  let currency_id_rise = document.createElement("h4");
+  currency_id_rise.innerText = "INR";
 
-const inrconversion = () =>{
+  let month_amount_rise = document.createElement("h2");
+  month_amount_rise.innerText = "19915/mo";
 
-    //Launch 
-    let currency_launch = document.getElementById("currency_launch");
-    currency_launch.innerHTML = null;
+  let para_rise = document.createElement("p");
+  para_rise.innerText =
+    "includes INR 4.8 Crores/yr revenue 0.6% of overage revenue";
 
-    let currency_id_launch = document.createElement("h4");
-    currency_id_launch.innerText = "INR"
+  //Scale
+  let currency_scale = document.getElementById("currency_scale");
+  currency_scale.innerHTML = null;
 
-    let month_amount_launch = document.createElement("h2");
-    month_amount_launch.innerText = "0/mo";
+  let currency_id_scale = document.createElement("h4");
+  currency_id_scale.innerText = "INR";
 
-    let para_launch = document.createElement("p");
-    para_launch.innerText = "for your first INR 80L in revenue What happens when I hit INR 80L?"
-  
-  
-    //Rise
-    let currency_rise = document.getElementById("currency_rise");
-    currency_rise.innerHTML = null;
+  let month_amount_scale = document.createElement("h2");
+  month_amount_scale.innerText = "43915/mo";
 
-    let currency_id_rise = document.createElement("h4");
-    currency_id_rise.innerText = "INR"
+  let para_scale = document.createElement("p");
+  para_scale.innerText =
+    "includes INR 9.6 Crores/yr revenue 0.75% of overage revenue";
 
-    let month_amount_rise = document.createElement("h2");
-    month_amount_rise.innerText = "19915/mo";
-
-    let para_rise = document.createElement("p");
-    para_rise.innerText = "includes INR 4.8 Crores/yr revenue 0.6% of overage revenue"
-        
-    //Scale
-    let currency_scale = document.getElementById("currency_scale");
-    currency_scale.innerHTML = null;
-
-    let currency_id_scale = document.createElement("h4");
-    currency_id_scale.innerText = "INR"
-
-    let month_amount_scale = document.createElement("h2");
-    month_amount_scale.innerText = "43915/mo";
-
-    let para_scale = document.createElement("p");
-    para_scale.innerText = "includes INR 9.6 Crores/yr revenue 0.75% of overage revenue"
-  
-
-    currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
-    currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
-    currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
-
-}
+  currency_launch.append(currency_id_launch, month_amount_launch, para_launch);
+  currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
+  currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
+};
