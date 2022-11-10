@@ -42,4 +42,38 @@ prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
   
+// // // / / / / / / / / / / 
+
+
+let form = document.getElementById("form");
+
+form.onsubmit = (event) =>{
+  event.preventDefault();
+
+  let data={
+    f_name: form.f_name.value,
+    l_name: form.l_name.value,
+    business_email: form.business_email.value,
+    job_title: form.job_title.value,
+    company_name: form.company_name.value,
+    Country: form.Country.value,
+    Country_code: form.Country_code.value,
+    phone_num: form.phone_num.value,
+    number_of_employees: form.number_of_employees.value,
+    past_work: form.past_work.value,
+    envision: form.envision.value,
+    organizations: form.organizations.value,
+    clients: form.clients.value,
+    tech: form.tech.value,
+    mutual: form.mutual.value,
+    partnership: form.partnership.value,
+    become_a_p: form.become_a_p.value
+  };
+
+  localStorage.setItem("ChrgeBee_form_data",JSON.stringify(data));
+  //console.log(data);
+
+};
+
+
   
