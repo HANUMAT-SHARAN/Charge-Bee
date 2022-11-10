@@ -11,6 +11,7 @@
   }
 
 #title_div{
+    padding-top: 90px;
     background-color: #651aba;
     color: white;
     display: flex;
@@ -107,6 +108,17 @@
 
 }
 
+#phone_div{
+    display: flex;
+    margin-bottom: -4%;
+
+}
+
+#phone_div input:first-child{
+    width: 25%;
+    margin-right: 2%;
+    text-align: center;
+}
 #become_a_p{
     border-radius: 4px;
     background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%);
@@ -179,9 +191,9 @@
     background: #fff;
     box-shadow: -10px 10px 10px -0px rgb(123 127 218 / 20%);
     border-radius: 8px;
-    position: relative;
-    transform: translateY(0);
-    transition: all ease .5s;
+    /* position: relative; */
+    /* transform: translateY(0);
+    transition: all ease .5s; */
 }
 .payment_gateway>img{
     max-width: 200px;
@@ -292,14 +304,78 @@
     background-color: #f8f8ff;
 
 }
+#slide_box{
+    border: 0px solid red;
+    background-color: #f8f8ff;
+    padding: 5% 10%;
+    text-align: center;
+
+}
+
+#slide_data{
+    border: 0px solid blue;
+    margin-bottom: -10%;
+    padding: 0% 20%;
+}
+#slide_data h1 {
+    font-size: 40px;
+    border: 0px solid red;
+    padding: 0% 15%;
+}
+#slide_data p{
+    margin: 5% 0%;
+    font-size: 20px;
+}
+
+#slide_data button{
+    background: #913ada;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 40%;
+    padding: 12px 30px;   
+    border: none; 
+}
 
 
-#sliding_box{
-    border: 0px solid black;
+#sliding_box{ 
+    border: 0px solid red;
     height: 200px;
     margin: auto;
+    /* position: relative; */
     display: grid;
-    place-items: 150px;
+    place-items: center;
     margin-top: 150px;
-    overflow: hidden;
+    overflow: hidden; 
+   
+
+}
+
+#slide-track{
+    display: flex;
+    width: calc(250px*9);
+    animation: scroll 40s linear infinite;
+  
+};
+
+.slide{
+    width: 250px;
+    display: flex;
+    align-items: center;
+   
+}
+.slide img{
+    width: 70%;
+}
+
+@keyframes scroll {
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translateX(calc(-250px *9));
+      }
 }
