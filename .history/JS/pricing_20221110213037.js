@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 import {
   navbarhtml,
   producthtml,
@@ -11,27 +11,27 @@ import {
 //   producthtml,
 //   solutionshtml,
 //   resourceshtml,
-// } from "/Component/navbar.js";
+// } from "/Component/navbar.html.js";
 
 
-let nav = document.querySelector("#navbar");
+// let nav = document.querySelector("#navbar");
 
-let htmlprod = document.querySelector("#product");
-htmlprod.innerHTML = producthtml();
+// let htmlprod = document.querySelector("#product");
+// htmlprod.innerHTML = producthtml();
 
-let solut = document.querySelector("#solutions");
+// let solut = document.querySelector("#solutions");
 
-solut.innerHTML = solutionshtml();
+// solut.innerHTML = solutionshtml();
 
-let reso = document.querySelector("#resources");
+// let reso = document.querySelector("#resources");
 
-reso.innerHTML = resourceshtml();
+// reso.innerHTML = resourceshtml();
 
-nav.innerHTML = navbarhtml();
-// /Scripts/navbarscript.js
-import { navbarscript } from "../Scripts/navbarscript.js";
+// nav.innerHTML = navbarhtml();
+// // /Scripts/navbarscript.js
+// import { navbarscript } from "../Scripts/navbarscript.js";
 
-navbarscript();
+// navbarscript();
 
 let log = document.querySelector("#logo");
 log.onclick = () => {

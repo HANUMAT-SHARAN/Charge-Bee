@@ -2,7 +2,7 @@ const navbarhtml = () => {
   return `<div>
     <img id="logo" src="https://i.ibb.co/z8Z7WjF/POWER-B.png" alt="logo" />
     <div id="prohover"><h3>Product</h3></div>
-    <div id="prices"><h3>Pricing</h3></div>
+    <div id="prices"><h3>Priceing</h3></div>
     <div id="sol"><h3>Solutions</h3></div>
     <div id="customers"><h3>Customers</h3></div>
     <div id="res"> <h3>Resources</h3></div>

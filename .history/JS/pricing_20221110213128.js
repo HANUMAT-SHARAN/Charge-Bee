@@ -6,12 +6,12 @@ import {
   resourceshtml,
 } from "/Component/navbar.js";
 
-// import {
-//   navbarhtml,
-//   producthtml,
-//   solutionshtml,
-//   resourceshtml,
-// } from "/Component/navbar.js";
+import {
+  navbarhtml,
+  producthtml,
+  solutionshtml,
+  resourceshtml,
+} from "/Component/navbar.js";
 
 
 let nav = document.querySelector("#navbar");
