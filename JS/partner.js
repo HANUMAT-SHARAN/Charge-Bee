@@ -42,4 +42,24 @@ prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
   
+// // // / / / / / / / / / / 
+
+
+let form = document.getElementById("form");
+
+let testbtns= document.getElementById('testbtn');
+testbtns.onclick = () => {
+  let name=form.f_name.value;
+  console.log(name);
+};
+
+
+form.onsubmit = () =>{
+  let name=documet.form.f_name.value;
+
+console.log(name);
+
+}
+
+
   
