@@ -88,3 +88,31 @@ justinshow3.onclick = () => {
   dal.style.display = "none";
   justindiv.style.display = "block";
 };
+
+
+
+
+let userdatarr=JSON.parse(localStorage.getItem("user"))||[]
+let signupbutton=document.querySelector("#signupbutton")
+signupbutton.onclick=()=>{
+
+let email=document.querySelector("#email").value
+let password=document.querySelector("#password").value
+
+
+if(password.length>=8&&email.includes("@")){
+  
+  let userdata={
+    email:email,
+    password:password
+  }
+
+  userdatarr.push(userdata)
+  localStorage.setItem("user",JSON.stringify(userdatarr))
+
+  alert("Signup Is Succesful")
+}else{
+  alert("Password is Too Small Or Please Check Your Email")
+}
+  
+}

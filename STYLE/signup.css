@@ -1,127 +1,208 @@
-#main{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-    gap:20px
+#main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
 }
 
-#dal{
-    display: block;
-    padding: 20px;
-    margin:30px;
+#dal {
+  display: block;
+  padding: 20px;
+  margin: 30px;
+}
+#dal div {
+  border-radius: 50px;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#dal button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px;
+}
+#dal img {
+  width: 40%;
+  text-align: center;
+}
+#person {
+  background-color: #b5b5b4;
+  text-align: center;
+}
+#text {
+  background-color: #3f379a;
+  text-align: center;
+}
+#buttonup {
+  color: #f5a567;
+}
+#rev {
+  background-color: #3f379a;
+  text-align: center;
+}
+#gillius {
+  display: none;
+  padding: 20px;
+  margin: 30px;
+}
+#gillius div {
+  border-radius: 50px;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#gillius button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px;
+}
+#gillius img {
+  width: 40%;
+  text-align: center;
+}
+#person {
+  background-color: #b5b5b4;
+  text-align: center;
+}
+#text {
+  background-color: #3f379a;
+  text-align: center;
+}
+#buttonup {
+  color: #f5a567;
+}
+#rev {
+  background-color: #3f379a;
+  text-align: center;
+}
+#justin {
+  display: none;
+  padding: 20px;
+  margin: 30px;
+}
+#justin div {
+  border-radius: 50px;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#justin button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px;
+}
+#justin img {
+  width: 40%;
+  text-align: center;
+}
+#person {
+  background-color: #b5b5b4;
+  text-align: center;
+}
+#text {
+  background-color: #3f379a;
+  text-align: center;
+}
+#buttonup {
+  color: #f5a567;
+}
+#rev {
+  background-color: #3f379a;
+  text-align: center;
+}
+#signup {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 2px 8px 8px 8px,
+    rgb(209, 213, 219) 2px 2px 2px 2px inset;
+  border-radius: 15px;
 
+  border-color: red;
 }
-#dal div{
-    border-radius: 50px;;
-    line-height: 40px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+#signup > div {
+  padding-left: 50px;
+  border-radius: 15px;
+  /* background-color: #6e3588 */
 }
-#dal button{
-   background-color: rgb(0, 0, 0);
-   border-radius: 30px;
-   padding: 10px;
+#signup > :nth-child(1) {
+  display: flex;
+  justify-content: space-around;
 }
-#dal img{
-    width:40%;
-    text-align: center;
-}
-#person{
-    background-color: #b5b5b4;
-    text-align: center;
-}
-#text{
-    background-color: #3f379a;
-    text-align: center;
-   
-}
-#buttonup{
- color:   #f5a567
-}
-#rev{
-    background-color: #3f379a;
-    text-align: center;
-    
-    
-}
-#gillius{
-    display: none;
-    padding: 20px;
-    margin:30px;
+#signup > :nth-child(1) img {
+  width: 13%;
+  border-radius: 20px;
+  padding: 6px;
 
+  margin-right: 80px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-#gillius div{
-    border-radius: 50px;;
-    line-height: 40px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-#gillius button{
-   background-color: rgb(0, 0, 0);
-   border-radius: 30px;
-   padding: 10px;
-}
-#gillius img{
-    width:40%;
-    text-align: center;
-}
-#person{
-    background-color: #b5b5b4;
-    text-align: center;
-}
-#text{
-    background-color: #3f379a;
-    text-align: center;
-   
-}
-#buttonup{
- color:   #f5a567
-}
-#rev{
-    background-color: #3f379a;
-    text-align: center;
-    
-    
-}
-#justin{
-    display: none;
-    padding: 20px;
-    margin:30px;
+#email {
+  padding: 20px;
+  font-size: 25px;
+  margin: auto;
 
+  border-radius: 10px;
+  background-color: #121212;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-#justin div{
-    border-radius: 50px;;
-    line-height: 40px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+#email:hover,
+#password:hover {
+  background-color: #000000;
 }
-#justin button{
-   background-color: rgb(0, 0, 0);
-   border-radius: 30px;
-   padding: 10px;
+#password {
+  padding: 20px;
+  font-size: 25px;
+  margin: auto;
+
+  border-radius: 10px;
+  background-color: #121212;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-#justin img{
-    width:40%;
-    text-align: center;
+#signup h1 {
+  font-size: 35px;
 }
-#person{
-    background-color: #b5b5b4;
-    text-align: center;
+#signupbutton {
+  font-size: 30px;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  background-color: #454545;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-#text{
-    background-color: #3f379a;
-    text-align: center;
-   
+#signupbutton:hover {
+  background-color: red;
+  padding: 30px 50px 30px 50px;
+  transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-#buttonup{
- color:   #f5a567
+#signup > :nth-child(5) {
+  line-height: 30px;
+  color: #454545;
 }
-#rev{
-    background-color: #3f379a;
-    text-align: center;
-    
-    
+#signup > :nth-child(6) img {
+  width: 100%;
+}
+#sand {
+  margin-bottom: 60px;
+  border-radius: 15px;
+}
+#login {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#login:hover {
+  background-color: rgb(100, 177, 64);
+  transition: 0.4s;
+  color: rgb(0, 0, 0);
 }
