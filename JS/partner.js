@@ -101,12 +101,9 @@ const popup = () => {
         popups.style.visibility="hidden";
         window.location.reload();
       }
+
+
       popups.append(img,h2,disc,btn);
      
 };
 
-
-let overview=document.querySelector("#overview")
-overview.onclick=()=>{
-  window.location.href="../HTML/product_overview.html"
-}
