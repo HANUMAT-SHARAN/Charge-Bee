@@ -1,0 +1,45 @@
+/* FOOTER */
+/* FOOTER */
+#footer{
+    display: flex;
+    margin-top: 80px;
+}
+#footer >div{
+    width: 20%;
+    margin: auto;
+}
+#footer >div p:hover{
+    cursor: pointer;
+    padding-left: 5px;
+    transition: 0.3s ease-in-out;
+}
+.footerelement >p:first-child{
+         font-size: 23px;
+         color: #26069a;
+         font-weight: 700;
+         display: flex;
+        align-items: center;
+}
+.footerelement p >i{
+    font-size: 10px;
+}
+
+   @media all and (min-width:500px) and (max-width:900px){
+    #footer{
+        display: block;
+       }
+       #footer >div{
+        width: 80%;
+        margin: auto;
+       }
+   }
+
+   @media all and (min-width:300px) and (max-width:500px){
+    #footer{
+        display: block;
+       }
+       #footer >div{
+        width: 80%;
+        margin: auto;
+       }
+   }

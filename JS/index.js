@@ -31,10 +31,18 @@ let prices=document.querySelector("#prices")
 prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
+
+// import footer
+import {footer,medeaicon} from "../Component/footer.js";
+document.getElementById("footer").innerHTML=footer();
+document.getElementById("mediaicons").innerHTML=medeaicon();
+
+
 let login=document.querySelector("#log")
 login.onclick=()=>{
   window.location.href="signup.html"
 }
+
 
 let imagesarr=[`<div class="picture">
 <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/customers/jose-bolanos.webp" alt="">
@@ -121,3 +129,108 @@ window.addEventListener("scroll",()=>{
         
  })
  
+
+
+
+ //FOR CONVERSION PORTION
+ const conversion=()=>{
+      let elem=document.getElementById("conversionoficon");
+      setTimeout(()=>{
+          elem.style.display="block"
+      },3000);
+     
+ }
+
+
+ //CHATBOX;
+
+ let flip=1;
+ document.getElementById("conversionoficon").onclick=()=>{
+  const audio=new Audio("../Audio/myaudio.mp3.wav");
+  audio.play();
+  if(flip==1){
+    document.getElementById("conversion").style.display="block";
+    flip=2;
+  }else{
+    document.getElementById("conversion").style.display=null;
+    flip=1;
+  }
+ }
+ conversion();
+
+ document.getElementById("writeyourchat").addEventListener("keypress",(event)=>{
+          if(event.key=="Enter"  ){
+            
+            let data=document.getElementById("writeyourchat").value ;
+            console.log(data)
+
+            let p=document.createElement("p");
+            p.innerText=data;
+
+            let div=document.createElement("div");
+            div.setAttribute("class","sendchat");
+
+            div.append(p);
+            document.querySelector("#chatbox").append(div);
+
+            document.getElementById("chatbox").scrollTo(0,document.body.scrollHeight);
+
+            //send audio
+            const audio=new Audio("../Audio/send.wav");
+            audio.play();
+           
+            setTimeout(recievans,2000);
+
+          }
+ })
+
+//function for resend data;
+let i=0;
+ function recievans(){
+  let ansarr=["Enter your organization name","Enter Total number of employee in your organization","Enter your organization net worth","Please tell your organization GST number","Please tell what you want from us"];
+   
+
+     //code for remove input box;
+     let totaldiv=document.querySelectorAll("#chatbox >div");
+    if(totaldiv.length>10){
+      let p=document.createElement("p");
+            p.innerText="Thanks, Our team reachout to you as soon as possible 🏃 🏃Have a nice day🕶️🥳🥳";
+
+            let div=document.createElement("div");
+            div.setAttribute("class","recievechat");
+
+            div.append(p);
+            document.querySelector("#chatbox").append(div);
+
+            document.getElementById("chatbox").scrollTo(0,document.body.scrollHeight);
+
+            document.getElementById("inputofchat").style.display="none";
+
+             //recive audio play
+             const audio=new Audio("../Audio/recive.wav");
+             audio.play();
+            return;
+    }
+    
+
+    let p=document.createElement("p");
+            p.innerText=ansarr[i];
+            i++;
+
+            let div=document.createElement("div");
+            div.setAttribute("class","recievechat");
+
+            div.append(p);
+            document.querySelector("#chatbox").append(div);
+
+            document.getElementById("chatbox").scrollTo(0,document.body.scrollHeight);
+
+            //recive audio play
+            const audio=new Audio("../Audio/recive.wav");
+            audio.play();
+ }
+
+ let overview=document.querySelector("#overview")
+overview.onclick=()=>{
+  window.location.href="../HTML/product_overview.html"
+}

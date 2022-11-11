@@ -49,6 +49,9 @@ window.onscroll=()=>{
  
   banner.style.display = "block";
 }
+// import {footer,medeaicon} from "../Component/footer.js";
+// document.getElementById("footer").innerHTML=footer();
+// document.getElementById("mediaicons").innerHTML=medeaicon();
 
 
 let reviewsdata = [
@@ -356,3 +359,12 @@ const append=()=>{
 }
 
 append()
+
+import {footer,medeaicon} from "../Component/footer.js";
+document.getElementById("footer").innerHTML=footer();
+document.getElementById("mediaicons").innerHTML=medeaicon();
+
+let overview=document.querySelector("#overview")
+overview.onclick=()=>{
+  window.location.href="../HTML/product_overview.html"
+}

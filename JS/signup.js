@@ -230,7 +230,7 @@ passcheck()
 emailcheck()
 }
 
-if(flagnosign==true){
+if(flagnosign){
   alert("Signup Not Succesfull")
 }
 

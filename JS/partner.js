@@ -107,13 +107,3 @@ const popup = () => {
      
 };
 
-
-
-// let container = document.querySelector(".container");
-
-//   window.onscroll = () => {
-//     if(){
-
-//     }
-//   }
-
