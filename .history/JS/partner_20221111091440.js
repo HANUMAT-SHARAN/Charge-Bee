@@ -46,8 +46,9 @@ prices.onclick=()=>{
 login.onclick=()=>{
   window.location.href="signup.html"
 }
-
+=======
   
+// // // / / / / / / / / / / 
 
 
 let form = document.getElementById("form");

@@ -41,13 +41,14 @@ import {
 prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
-
+<<<<<<< HEAD
   let login=document.querySelector("#log")
 login.onclick=()=>{
   window.location.href="signup.html"
 }
-
+=======
   
+// // // / / / / / / / / / / 
 
 
 let form = document.getElementById("form");

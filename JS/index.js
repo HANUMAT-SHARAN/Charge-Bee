@@ -31,7 +31,10 @@ let prices=document.querySelector("#prices")
 prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
-
+let login=document.querySelector("#log")
+login.onclick=()=>{
+  window.location.href="signup.html"
+}
 
 let imagesarr=[`<div class="picture">
 <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/customers/jose-bolanos.webp" alt="">
