@@ -1,0 +1,282 @@
+#main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+  gap: 20px;
+}
+
+#dal {
+  color:white;
+  display: block;
+  padding: 20px;
+  margin: 30px;
+}
+#dal:hover{
+  margin:70px;
+  transition: 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 20px;
+}
+#gillius:hover{
+  margin:70px;
+  transition: 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 20px;
+}
+#dal div {
+  border-radius: 50px;
+  line-height: 40px;
+  /* justify-content: center;
+  align-items: center; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#dal button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px;
+}
+#dal img {
+  width: 40%;
+  /* text-align: end;
+
+  align-items: baseline; */
+}
+#person {
+  background-color: #b5b5b4;
+  /* text-align: center; */
+}
+#text {
+  background-color: #3f379a;
+  /* text-align: center; */
+}
+#buttonup {
+  color: #f5a567;
+}
+#rev {
+  background-color: #3f379a;
+  /* text-align: center; */
+}
+#gillius {
+  display: none;
+  padding: 20px;
+  color: White;
+  margin: 30px;
+}
+#gillius div {
+  border-radius: 50px;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#gillius button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px;
+}
+#gillius img {
+  width: 40%;
+  text-align: center;
+}
+#person {
+  background-color: #b5b5b4;
+  text-align: center;
+}
+#text {
+  background-color: #3f379a;
+  text-align: center;
+}
+#buttonup {
+  color: #f5a567;
+}
+#rev {
+  background-color: #3f379a;
+  text-align: center;
+}
+#justin {
+  display: none;
+  padding: 20px;
+  margin: 30px;
+  color: white;
+}
+#justin:hover{
+  margin:70px;
+  transition: 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 20px;
+
+}
+#justin div {
+  border-radius: 50px;
+  line-height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#justin button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px;
+}
+#justin img {
+  width: 40%;
+  text-align: center;
+}
+#person {
+  background-color: #b5b5b4;
+  text-align: center;
+}
+#text {
+  background-color: #3f379a;
+  text-align: center;
+}
+#buttonup {
+  color: #f5a567;
+}
+#rev {
+  background-color: #3f379a;
+  text-align: center;
+}
+#signup {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 2px 8px 8px 8px,
+    rgb(209, 213, 219) 2px 2px 2px 2px inset;
+  border-radius: 15px;
+
+  border-color: red;
+}
+#signup:hover{
+  border:5px solid rgb(0, 64, 241);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin:10px;
+  transition: 0.8s;
+}
+#signup > div {
+  padding-left: 50px;
+  border-radius: 15px;
+  /* background-color: #6e3588 */
+}
+#signup > :nth-child(1) {
+  display: flex;
+  justify-content: space-around;
+}
+#signup > :nth-child(1) img {
+  width: 13%;
+  border-radius: 20px;
+  padding: 6px;
+
+  margin-right: 80px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#signup > :nth-child(1) img:hover {
+  background-color: red;
+  transition: 0.8s;
+}
+#email {
+  padding: 20px;
+  font-size: 25px;
+  margin: auto;
+ 
+font-weight: bold;
+  border-radius: 10px;
+  background-color: white;;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#email:hover,
+#password:hover {
+  
+  border:5px solid blue
+}
+#password {
+  padding: 20px;
+  font-size: 25px;
+  margin: auto;
+  font-weight: bold;
+
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#signup h1 {
+  font-size: 35px;
+}
+#signupbutton {
+  display: none;
+  color:white;
+  font-size: 30px;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  background-color: #3e379b;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#signupbutton:hover {
+  background-color: red;
+  padding: 30px 50px 30px 50px;
+  transition: 0.4s;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#signup > :nth-child(5) {
+  line-height: 30px;
+  color: #454545;
+}
+#signup > :nth-child(6) img {
+  width: 100%;
+}
+#sand {
+  margin-bottom: 60px;
+  border-radius: 15px;
+
+ margin:10px;
+ background-color: rgb(255, 255, 255);
+
+ 
+}
+
+#login {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 5px 15px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* #signup h2{
+  color:#414444
+} */
+#login:hover {
+  background-color: rgb(23, 7, 255);
+  transition: 0.4s;
+  font-weight: bold;
+
+
+  color:white;
+  
+}
+#alertpassword,#alertmail{
+  font-weight: bold;
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
+    gap: 20px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
+    gap: 20px;
+  }
+}

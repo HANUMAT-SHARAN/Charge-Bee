@@ -1,12 +1,20 @@
+*{
+    scroll-behavior: smooth;
+}
 #navbar{
-    z-index: 10000;
+    z-index: 1000;
+}
+#getdemo{
+    border: none;
+    font-size: 16px;
 }
 
+/* subscription */
 #subscription{
     display: flex; 
     font-family: sans-serif;
     height: 450px;
-    width: 95%;
+    width: 94%;
     padding-top:100px;
    
 }
@@ -15,7 +23,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 #change_image button{
    width: 10px;
@@ -223,6 +230,370 @@
     
 }
 
+/* streamline parts */
+#stream{
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+   
+}
+#oper{
+    font-weight: 700;   
+}
+#automates{
+    width: 30%;
+    margin: auto;
+    color: hsl(240, 15%, 53%);
+    font-size: 16px;
+    line-height: 25px;
+}
+/* for stcikey bar */
+#stckybar{
+    display: flex;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 70px;
+    /* border-bottom :2px solid hsl(240, 4%, 91%) ; */
+    border-bottom :2px solid hsl(240, 66%, 38%) ;
+    height: 70px;
+    margin-right: 5%;
+    
+}
+#stckybar a{
+    text-decoration: none;
+}
+#stckybar p{
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #76769a;
+      cursor: pointer;
+}
+
+/* for evry operation div */
+#opertaion{ 
+    margin-left: 20%;
+}
+.automate{
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scrool{
+    margin-top: 100px;
+    display: flex;
+}
+.scrlimg{
+    margin-left: 60px;
+}
+.scrool img{
+    width: 100%;
+}
+#opertaion >div:nth-child(5) img{
+    width: 55%;
+}
+.automate p{
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #76769a;
+    cursor: pointer;
+    line-height: 23px;
+    font-weight:500;  
+}
+.automate >div p{
+       height: 18px;
+}
+.automate i{
+    font-size: 12px;
+    color: #5c00b4;
+}
+
+.automate >div:nth-child(4) p{
+    color: blue;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+/* PARTNER PORTION */
+#growthstories{
+    width: 80%;
+     margin: auto;
+     display: flex;
+     border: 5px solid rgb(209, 207, 207);
+     border-radius: 10px;
+}
+#growthstories h1,p{
+    color: #181064;
+}
+#participation{
+ width: 70%;
+ margin: auto;
+ margin-top: 50px;
+}
+#likelyto{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+#firstgrowth{
+    width: 30%;
+    margin-left: -15%;
+}
+#secondgrowth{
+    width: 70%;
+    margin-left: 15%;
+}
+/* CUSTOMISED DEMO */
+#customized{
+        display: flex;
+        margin-top: 230px;
+        background-image: linear-gradient(45deg, #26069a, #993fbd); 
+}
+#oclaimages{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#oclaimages img{
+    width: 70%;
+}
+#robinlambart{
+    width: 250px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+#robinlambart>p:nth-child(3){
+    font-size: 16px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#robinlambart>p:nth-child(4){
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+#livestrom{
+      color: rgb(33, 141, 209);
+}
+#cicularimage{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+#cicularimage img{
+    width: 100px;
+    border-radius: 100%;
+}
+#rightdoua{
+    font-size: 80px;
+   position: absolute;
+   margin-top: -75px;
+   margin-left: 190px;
+   color: #500ad2;
+}
+#workflow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#workflow h1{
+    margin: auto;
+    margin-left: 50px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.buttonIn {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+   align-items: center;
+}
+.buttonIn input{
+   height: 50px;
+   width: 400px;
+   border-radius: 25px;
+   border: none;
+   position: relative;
+   background-color: #1d0968;
+   outline: none;
+   font-size: 20px;
+   color: white;
+}
+#enterbtnn{
+   
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #7f45ff;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: 343px;
+   cursor: pointer;
+}
+
+/* FOOTER */
+/* #footer{
+    display: flex;
+    margin-top: 80px;
+}
+#footer >div{
+    width: 20%;
+    margin: auto;
+}
+#footer >div p:hover{
+    cursor: pointer;
+    padding-left: 5px;
+    transition: 0.3s ease-in-out;
+}
+.footerelement >p:first-child{
+         font-size: 23px;
+         color: #26069a;
+         font-weight: 700;
+         display: flex;
+        align-items: center;
+}
+.footerelement p >i{
+    font-size: 10px;
+} */
+
+
+
+
+/* MEDEA ICON */
+#mediaicons{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#mediaicons i{
+    margin: 20px;
+    font-size: 25px;
+    color: black;
+}
+/* FOR CONVERZATION PART */
+#conversionoficon{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 10px;   
+}
+#conversionoficon img{
+    width: 100%;
+}
+#conversionoficon :hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* CHATBOX */
+#conversion{
+    width: 400px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 100px;
+    background-color: white;
+}
+#bannerofchat{
+display: flex;
+width: 100%;
+height: 40px;
+background-color: #0078d7;
+}
+#bannerofchat img{
+height: 100%;
+padding-left: 40px;
+padding-right: 60px;
+}
+#bannerofchat div:nth-child(2){
+display: flex;
+align-items: center;
+color: white;
+}
+#bannerofchat div:nth-child(3){
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 40px;
+cursor: pointer;
+}
+#inputofchat{
+height: 40px;
+margin-top: 0px;
+bottom: 0px;
+/* display: none; */
+}
+#inputofchat input{
+margin-left: 30px;
+width: 200px;
+height: 30px;
+align-items: center;
+outline: none;
+font-size: 18px;
+}
+#chatbox{
+height: 420px;
+overflow-x: auto;
+border-bottom: 1px solid rgb(129, 120, 120);
+scroll-behavior: smooth;
+}
+.chatbox::-webkit-scrollbar{
+display: none;
+}
+#inputofchat i{
+margin-left: 10px;
+cursor: pointer;
+}
+.recievechat p{   
+width: 200px;
+padding-left: 40px;
+height: auto;
+font-size: 16px;
+overflow-y: auto;
+background-color: #f5f8fa;
+color: black;
+border-radius: 5px;
+padding: 10px;
+font-weight: 500;
+font-family:Arial, Helvetica, sans-serif;
+}
+.sendchat{
+width: 250px;
+margin-left: 130px;
+}
+.sendchat::-webkit-scrollbar {
+display: none;
+}
+.sendchat p{    
+font-size: 16px;
+background-color: #6450f0;
+color: white;
+border-radius: 5px;
+padding: 10px;
+overflow-y: auto;
+font-weight: 500;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
 
 
 
@@ -275,6 +646,15 @@
         top: 600px; 
         left: 0px;
      }
+     #headingtext{
+        padding-left: 20px;
+     }
+     #chagebe{
+        padding-left: 20px;
+     }
+     #justifybtn{
+        padding-left: 20px;
+     }
 
      /* CARDS */
      #desigened{
@@ -305,6 +685,48 @@
         padding-left: 50%;
         width: 200%;
     }
+
+    /* straemline */
+    #automates{
+        width: 80%;
+    }
+    #opertaion{ 
+        margin-left: 10%;
+    }
+    
+    /* STCKIY BAR */
+    #stckybar{
+        display: none;
+    }
+     /* PARTICIPATION */
+     #participation{
+        width: 90%;
+    }
+    #growthstories{
+        width: 80%;
+    }
+    #likelyto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    /* CUSTOMISED PART */
+    #customized{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   .buttonIn{
+    margin-top: 40px;
+   }
+   /* FOOTER
+   #footer{
+    display: block;
+   }
+   #footer >div{
+    width: 80%;
+    margin: auto;
+   } */
 
 }
 
@@ -351,10 +773,88 @@
         top: 500px; 
         left: 0px;
      }
+     #headingtext{
+        padding-left: 20px;
+     }
+     #chagebe{
+        padding-left: 20px;
+     }
+     #justifybtn{
+        padding-left: 20px;
+     }
 
      /* CARDS */
      #freedom{
         width: 110%;
      }
+     #desigened{
+        flex-direction: column;
+     }
+     #freedom{
+        width: 80%;
+     }
+     #freedom >div img{
+        display: none;
+     }
+     #rethink{
+        width: 100%;
+        display: flex;
+        overflow: auto;
+     }
+     #rethink >div{
+        width: 100%;
+        padding-right: 130px;
+     }
+     .cardtext{
+        width: 150%;
+    }
+    .models{
+        width: 200%;
+    }
+    .learnmore{
+        padding-left: 50%;
+        width: 200%;
+    }
+     /* straemline */
+     #automates{
+        width: 90%;
+    }
+    #stream{
+        text-align: center;
+        text-align: start;
+        font-size: 15px;
+        background-color:#f9fcff ;
+    }
+    #oper{
+        font-weight: 700;   
+        padding-left: 5%;
+    }
+    /* STCKIY BAR */
+
+    #stckybar{
+        display: none;
+    }
+    #opertaion{ 
+        margin-left: 5%;
+        background-color: #f9fcff;
+    }
+    .automate{
+        width: 90%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+    }
+    .scrool{
+        margin-top: 100px;
+        display: block;
+    }
+    .scrlimg{
+        margin-left: 0px;
+    }
+    
+    #opertaion >div:nth-child(5) img{
+        width: 90%;
+    }
+
+   
 }
 

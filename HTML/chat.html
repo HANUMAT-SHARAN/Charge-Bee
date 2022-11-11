@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous">
+    </script>
+</head>
+<style>
+
+    /* CHATING */
+    #conversion{
+        width: 400px;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+    }
+#bannerofchat{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #0078d7;
+}
+#bannerofchat img{
+   height: 100%;
+   padding-left: 40px;
+   padding-right: 60px;
+}
+#bannerofchat div:nth-child(2){
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#bannerofchat div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    cursor: pointer;
+}
+#inputofchat{
+    height: 40px;
+    margin-top: 0px;
+    bottom: 0px;
+}
+#inputofchat input{
+  margin-left: 30px;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    outline: none;
+}
+#chatbox{
+   height: 420px;
+   overflow-x: auto;
+   border-bottom: 1px solid rgb(129, 120, 120);
+}
+.chatbox::-webkit-scrollbar{
+    display: none;
+}
+#inputofchat i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.recievechat p{   
+    width: 200px;
+    padding-left: 40px;
+    height: auto;
+    font-size: 16px;
+    overflow-y: auto;
+    background-color: #f5f8fa;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.sendchat{
+    width: 250px;
+    margin-left: 130px;
+}
+.sendchat::-webkit-scrollbar {
+    display: none;
+}
+.sendchat p{    
+    font-size: 16px;
+    background-color: #f5f8fa;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+</style>
+<body>
+        <div id="conversion">
+                <div id="bannerofchat">
+                        <div>
+                            <img src="https://leadgenapp.io/wp-content/uploads/2022/03/a5775a6ae613903e12d88be21354610c.png" alt="">
+                        </div>
+                        <div>
+                            <h3> Chat with Grow Smarter</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                </div>
+                <div id="chatbox">
+                       <div class="sendchat">
+                             <p>sending a long  by amit</p>
+                       </div>
+                       <div class="recievechat">
+                        <p>recievr cjat bt dhj vahsasnihjd  dhvd</p>
+                        <p>recievr cjat bt dhj vahsasnihjd  dhvd</p>
+                        <p>recievr cjat bt dhj vahsasnihjd  dhvd</p>
+                        <p>recievr cjat bt dhj vahsasnihjd  dhvd</p>
+                        <p>recievr cjat bt dhj vahsasnihjd  dhvd</p>
+                       </div>
+                </div>
+                  <div id="inputofchat">
+                          <input type="text" >
+                          <i id="sendimogy" class="fa-solid fa-icons"></i>
+                          <i id="sendfile" class="fa-solid fa-paperclip"></i>
+                          <i id="settings" class="fa-solid fa-gear"></i>
+                  </div>
+        </div>
+</body>
+</html>

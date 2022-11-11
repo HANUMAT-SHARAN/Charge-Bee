@@ -4,6 +4,7 @@
   position: fixed;
   background-color: rgb(22, 0, 221);
   color: white;
+  border-radius: 8px;
 }
 body {
   margin: 0px;
@@ -72,6 +73,7 @@ body {
   position: absolute;
   position: fixed;
   gap: 20px;
+  z-index: 10000;
 }
 #product > div:hover {
   transition: 0.8s;
@@ -105,6 +107,10 @@ body {
   background-color: rgb(236, 232, 232);
   border-radius: 20px;
 
+  z-index: 10000;
+
+  display: none;
+
   position: absolute;
   position: fixed;
 }
@@ -113,6 +119,7 @@ body {
   padding-left: 30px;
   padding-top: 20px;
   border-radius: 15px;
+ 
 }
 #solutions > div:hover {
   transition: 0.8s;
@@ -133,6 +140,7 @@ body {
   background-color: rgb(236, 232, 232);
   border-radius: 20px;
   position: fixed;
+  z-index: 10000;
 }
 #resources > div {
   line-height: 25px;
@@ -156,4 +164,32 @@ body {
 }
 #Dividernavbar {
   height: 90px;
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #navbar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #product {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #solutions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #resources {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #navbar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #product {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #solutions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #resources {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

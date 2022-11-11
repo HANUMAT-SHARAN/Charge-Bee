@@ -11,7 +11,7 @@
   }
 
 #title_div{
-    padding-top: 100px;
+    padding-top: 90px;
     background-color: #651aba;
     color: white;
     display: flex;
@@ -108,8 +108,73 @@
 
 }
 
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#popup{
+   width: 400px;
+   background: #fff;
+   border-radius: 6px;
+   position: absolute;
+   top: 175%;
+   left: 50%;
+   transform: translate(-50%, -50%) ;
+   text-align: center;
+   padding: 0 30px 30px;
+   color: #333;
+   visibility: hidden;
 
 
+}
+
+
+
+#popup img{
+    width: 100px;
+    margin-top:-50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+
+#popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+#popup button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color:fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor:pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+#phone_div{
+    display: flex;
+    margin-bottom: -4%;
+
+}
+
+#phone_div input:first-child{
+    width: 25%;
+    margin-right: 2%;
+    text-align: center;
+}
 #become_a_p{
     border-radius: 4px;
     background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%);
@@ -182,9 +247,9 @@
     background: #fff;
     box-shadow: -10px 10px 10px -0px rgb(123 127 218 / 20%);
     border-radius: 8px;
-    position: relative;
-    transform: translateY(0);
-    transition: all ease .5s;
+    /* position: relative; */
+    /* transform: translateY(0);
+    transition: all ease .5s; */
 }
 .payment_gateway>img{
     max-width: 200px;
@@ -236,7 +301,7 @@
 }
 
 #yt_video{
-    border: 1px solid black;
+    border: 0px solid black;
     text-align: center;
     padding: 8% 10%;
     padding-bottom: 8%;
@@ -272,3 +337,251 @@
     border: none;
 }
 
+#faq_div{
+    border: 0px solid red;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#faq_div h1{
+    margin-bottom: 30px;
+}
+
+.faq{
+    padding: 5% 2%;
+    text-align: start;
+    /* box-shadow: -10px 10px 10px -0px rgb(123 127 218 / 20%); */
+    margin: 10px;
+}
+
+.faq:hover{
+    background-color: #f8f8ff;
+
+}
+#slide_box{
+    border: 0px solid red;
+    background-color: #f8f8ff;
+    padding: 5% 10%;
+    text-align: center;
+
+}
+
+#slide_data{
+    border: 0px solid blue;
+    margin-bottom: -10%;
+    padding: 0% 20%;
+}
+#slide_data h1 {
+    font-size: 40px;
+    border: 0px solid red;
+    padding: 0% 15%;
+}
+#slide_data p{
+    margin: 5% 0%;
+    font-size: 20px;
+}
+
+#slide_data button{
+    background: #913ada;
+    border-radius: 4px;
+    background: linear-gradient(106.71deg,#4300a3 11.13%,#6100bb 85.15%,#a700f1 116.91%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 40%;
+    padding: 12px 30px;   
+    border: none; 
+}
+
+
+#sliding_box{ 
+    border: 0px solid red;
+    height: 200px;
+    margin: auto;
+    /* position: relative; */
+    display: grid;
+    place-items: center;
+    margin-top: 150px;
+    overflow: hidden; 
+   
+
+}
+
+#slide-track{
+    display: flex;
+    width: calc(250px*9);
+    animation: scroll 100s linear infinite;
+  
+};
+
+.slide{
+    width: 250px;
+    display: flex;
+    align-items: center;
+   
+}
+.slide img{
+    width: 70%;
+}
+
+@keyframes scroll {
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translateX(calc(-250px *9));
+      }
+}
+
+/* demo */
+#customized{
+    display: flex;
+    margin-top: 230px;
+    background-image: linear-gradient(45deg, #26069a, #993fbd); 
+}
+#customized{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#workflow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#workflow h1{
+    margin: auto;
+    margin-left: 50px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.buttonIn {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+   align-items: center;
+}
+.buttonIn input{
+   height: 50px;
+   width: 400px;
+   border-radius: 25px;
+   border: none;
+   position: relative;
+   background-color: #1d0968;
+   outline: none;
+   font-size: 20px;
+   color: white;
+}
+
+.buttonIn{
+    margin-top: 40px;
+}
+
+#enterbtnn{
+   
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #7f45ff;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: 343px;
+   cursor: pointer;
+}
+
+#robinlambart{
+    width: 250px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+#robinlambart>p:nth-child(3){
+    font-size: 16px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#robinlambart>p:nth-child(4){
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+#rightdoua{
+    font-size: 80px;
+   position: absolute;
+   margin-top: -75px;
+   margin-left: 190px;
+   color: #500ad2;
+}
+
+#cicularimage{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+#cicularimage img{
+    width: 100px;
+    border-radius: 100%;
+}
+
+#livestrom{
+    color: rgb(33, 141, 209);
+}
+
+#oclaimages{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#oclaimages img{
+    width: 70%;
+}
+
+#footer{
+    display: flex;
+    margin-top: 80px;
+}
+#footer >div{
+    width: 20%;
+    margin: auto;
+}
+#footer >div p:hover{
+    cursor: pointer;
+    padding-left: 5px;
+    transition: 0.3s ease-in-out;
+}
+.footerelement >p:first-child{
+         font-size: 23px;
+         color: #26069a;
+         font-weight: 700;
+         display: flex;
+        align-items: center;
+}
+.footerelement p >i{
+    font-size: 10px;
+}
+
+#mediaicons{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#mediaicons i{
+    margin: 20px;
+    font-size: 25px;
+    color: black;
+}
+   
