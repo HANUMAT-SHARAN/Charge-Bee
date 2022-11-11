@@ -2,9 +2,14 @@
     scroll-behavior: smooth;
 }
 #navbar{
-    z-index: 10000;
+    z-index: 1000;
+}
+#getdemo{
+    border: none;
+    font-size: 16px;
 }
 
+/* subscription */
 #subscription{
     display: flex; 
     font-family: sans-serif;
@@ -18,7 +23,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 #change_image button{
    width: 10px;
@@ -252,10 +256,11 @@
     margin: auto;
     justify-content: space-around;
     margin-top: 70px;
-    border-bottom :2px solid hsl(240, 4%, 91%) ;
+    /* border-bottom :2px solid hsl(240, 4%, 91%) ; */
+    border-bottom :2px solid hsl(240, 66%, 38%) ;
     height: 70px;
     margin-right: 5%;
-  
+    
 }
 #stckybar a{
     text-decoration: none;
@@ -437,7 +442,7 @@
 }
 
 /* FOOTER */
-#footer{
+/* #footer{
     display: flex;
     margin-top: 80px;
 }
@@ -459,7 +464,10 @@
 }
 .footerelement p >i{
     font-size: 10px;
-}
+} */
+
+
+
 
 /* MEDEA ICON */
 #mediaicons{
@@ -474,6 +482,125 @@
     font-size: 25px;
     color: black;
 }
+/* FOR CONVERZATION PART */
+#conversionoficon{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 10px;   
+}
+#conversionoficon img{
+    width: 100%;
+}
+#conversionoficon :hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* CHATBOX */
+#conversion{
+    width: 400px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 100px;
+    background-color: white;
+}
+#bannerofchat{
+display: flex;
+width: 100%;
+height: 40px;
+background-color: #0078d7;
+}
+#bannerofchat img{
+height: 100%;
+padding-left: 40px;
+padding-right: 60px;
+}
+#bannerofchat div:nth-child(2){
+display: flex;
+align-items: center;
+color: white;
+}
+#bannerofchat div:nth-child(3){
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 40px;
+cursor: pointer;
+}
+#inputofchat{
+height: 40px;
+margin-top: 0px;
+bottom: 0px;
+/* display: none; */
+}
+#inputofchat input{
+margin-left: 30px;
+width: 200px;
+height: 30px;
+align-items: center;
+outline: none;
+font-size: 18px;
+}
+#chatbox{
+height: 420px;
+overflow-x: auto;
+border-bottom: 1px solid rgb(129, 120, 120);
+scroll-behavior: smooth;
+}
+.chatbox::-webkit-scrollbar{
+display: none;
+}
+#inputofchat i{
+margin-left: 10px;
+cursor: pointer;
+}
+.recievechat p{   
+width: 200px;
+padding-left: 40px;
+height: auto;
+font-size: 16px;
+overflow-y: auto;
+background-color: #f5f8fa;
+color: black;
+border-radius: 5px;
+padding: 10px;
+font-weight: 500;
+font-family:Arial, Helvetica, sans-serif;
+}
+.sendchat{
+width: 250px;
+margin-left: 130px;
+}
+.sendchat::-webkit-scrollbar {
+display: none;
+}
+.sendchat p{    
+font-size: 16px;
+background-color: #6450f0;
+color: white;
+border-radius: 5px;
+padding: 10px;
+overflow-y: auto;
+font-weight: 500;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -518,6 +645,15 @@
     #doublecota{
         top: 600px; 
         left: 0px;
+     }
+     #headingtext{
+        padding-left: 20px;
+     }
+     #chagebe{
+        padding-left: 20px;
+     }
+     #justifybtn{
+        padding-left: 20px;
      }
 
      /* CARDS */
@@ -583,14 +719,14 @@
    .buttonIn{
     margin-top: 40px;
    }
-   /* FOOTER */
+   /* FOOTER
    #footer{
     display: block;
    }
    #footer >div{
     width: 80%;
     margin: auto;
-}
+   } */
 
 }
 
@@ -636,6 +772,15 @@
     #doublecota{
         top: 500px; 
         left: 0px;
+     }
+     #headingtext{
+        padding-left: 20px;
+     }
+     #chagebe{
+        padding-left: 20px;
+     }
+     #justifybtn{
+        padding-left: 20px;
      }
 
      /* CARDS */
