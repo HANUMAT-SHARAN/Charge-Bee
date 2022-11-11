@@ -186,7 +186,7 @@ window.addEventListener("scroll",()=>{
 
 //function for resend data
  function recievans(){
-    let ansarr=["OK thanks ,Enter your mobile number","Enter your Email account","Enter your organization address","Enter your organization net worth","Please tell what you want from us","Enter your Total number of employee in your organization","Enter your organization name","Please tell your organization GST number",];
+    let ansarr=["OK thanks ,Enter your mobile number","Enter your Email account","Enter your organization address","Enter your organization net worth","Please tell what you want from us","Enter your Total number of employee in your organization","Enter your organization name","Please tell your organization GST number"];
     let length=ansarr.length;
      let dataindex=Math.floor(Math.random() *length);
 
