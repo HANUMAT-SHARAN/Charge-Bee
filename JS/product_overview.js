@@ -97,3 +97,8 @@ function carousel(){
 }
 
 carousel();
+
+let overview=document.querySelector("#overview")
+overview.onclick=()=>{
+  window.location.href="../HTML/product_overview.html"
+}

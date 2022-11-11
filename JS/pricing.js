@@ -361,3 +361,8 @@ const inrconversion = () => {
   currency_rise.append(currency_id_rise, month_amount_rise, para_rise);
   currency_scale.append(currency_id_scale, month_amount_scale, para_scale);
 };
+
+let overview=document.querySelector("#overview")
+overview.onclick=()=>{
+  window.location.href="../HTML/product_overview.html"
+}

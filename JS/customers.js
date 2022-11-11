@@ -363,3 +363,8 @@ append()
 import {footer,medeaicon} from "../Component/footer.js";
 document.getElementById("footer").innerHTML=footer();
 document.getElementById("mediaicons").innerHTML=medeaicon();
+
+let overview=document.querySelector("#overview")
+overview.onclick=()=>{
+  window.location.href="../HTML/product_overview.html"
+}
