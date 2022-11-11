@@ -185,11 +185,13 @@ window.addEventListener("scroll",()=>{
  })
 
 //function for resend data
+let i=0;
  function recievans(){
-    let ansarr=["OK thanks ,Enter your mobile number","Enter your Email account","Enter your organization address","Enter your organization net worth","Please tell what you want from us","Enter your Total number of employee in your organization","Enter your organization name","Please tell your organization GST number",];
-    let length=ansarr.length;
-     let dataindex=Math.floor(Math.random() *length);
+   
 
+    let ansarr=["Enter your organization name","Enter Total number of employee in your organization","Enter your organization net worth","Please tell your organization GST number","Please tell what you want from us"];
+    
+    
      //code for remove input box;
      let totaldiv=document.querySelectorAll("#chatbox >div");
     if(totaldiv.length>10){
@@ -214,7 +216,8 @@ window.addEventListener("scroll",()=>{
     
 
     let p=document.createElement("p");
-            p.innerText=ansarr[dataindex];
+            p.innerText=ansarr[i];
+            i++;
 
             let div=document.createElement("div");
             div.setAttribute("class","recievechat");
