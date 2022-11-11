@@ -73,6 +73,7 @@ body {
   position: absolute;
   position: fixed;
   gap: 20px;
+  z-index: 10000;
 }
 #product > div:hover {
   transition: 0.8s;
@@ -105,7 +106,7 @@ body {
   gap: 20px;
   background-color: rgb(236, 232, 232);
   border-radius: 20px;
-
+  z-index: 10000;
   position: absolute;
   position: fixed;
 }
@@ -134,6 +135,7 @@ body {
   background-color: rgb(236, 232, 232);
   border-radius: 20px;
   position: fixed;
+  z-index: 10000;
 }
 #resources > div {
   line-height: 25px;

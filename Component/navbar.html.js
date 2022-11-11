@@ -26,7 +26,7 @@ const navbarhtml=()=>{
       />
       Login
     </h3>
-    <h3><button id="getdemo">Get a Demo></button></h3>
+    <h3><button id="getdemo">Get a Demo</button></h3>
   </div>`
 }
 
