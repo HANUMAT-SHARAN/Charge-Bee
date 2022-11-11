@@ -59,6 +59,7 @@
 #gillius {
   display: none;
   padding: 20px;
+  color: White;
   margin: 30px;
 }
 #gillius div {
@@ -96,13 +97,14 @@
   display: none;
   padding: 20px;
   margin: 30px;
+  color: white;
 }
 #justin:hover{
   margin:70px;
   transition: 0.8s;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 20px;
-  border:5px solid rgb(55, 0, 255);
+
 }
 #justin div {
   border-radius: 50px;
@@ -147,8 +149,8 @@
 }
 #signup:hover{
   border:5px solid rgb(0, 64, 241);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  margin:30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin:10px;
   transition: 0.8s;
 }
 #signup > div {
@@ -177,7 +179,7 @@
   padding: 20px;
   font-size: 25px;
   margin: auto;
- color:white;
+ 
 font-weight: bold;
   border-radius: 10px;
   background-color: white;;
@@ -204,11 +206,12 @@ font-weight: bold;
   font-size: 35px;
 }
 #signupbutton {
+  display: none;
   color:white;
   font-size: 30px;
   padding: 20px 40px 20px 40px;
   border-radius: 10px;
-  background-color: #454545;
+  background-color: #3e379b;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -230,21 +233,13 @@ font-weight: bold;
 #sand {
   margin-bottom: 60px;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
  margin:10px;
+ background-color: rgb(255, 255, 255);
 
  
 }
-#sand :hover{
-  margin-bottom: 60px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-margin:10px;
-  transition: 0.4s;
-  border:5px solid rgb(87, 0, 187);
 
- 
-}
 #login {
   font-weight: bold;
   font-size: 20px;
@@ -265,4 +260,7 @@ margin:10px;
 
   color:white;
   
+}
+#alertpassword,#alertmail{
+  font-weight: bold;
 }
