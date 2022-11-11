@@ -157,6 +157,7 @@
   padding: 20px;
   transition: 0.8s;
   color: white;
+  background-color: rgba(63, 150, 37, 0.925);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -295,6 +296,7 @@
   background-color: #fffefe;
   border-radius: 15px;
 }
+
 #reviews > div:hover {
   padding: 70px;
 
