@@ -101,8 +101,19 @@ const popup = () => {
         popups.style.visibility="hidden";
         window.location.reload();
       }
+
+
       popups.append(img,h2,disc,btn);
      
 };
 
+
+
+// let container = document.querySelector(".container");
+
+//   window.onscroll = () => {
+//     if(){
+
+//     }
+//   }
 
