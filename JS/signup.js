@@ -40,6 +40,8 @@ dallshow1time.onclick = () => {
 
   console.log("dall")
   dal.style.display = "block";
+  dallshow1time.style.backgroundColor="red"
+  justinshow1.style.backgroundColor="none"
 };
 
 let dallshow2time = document.querySelector("#dallshow2time");
@@ -49,6 +51,8 @@ dallshow2time.onclick = () => {
   justindiv.style.display = "none";
   console.log("dall")
   dal.style.display = "block";
+  dallshow2time.style.backgroundColor="red"
+  justinshow2.style.backgroundColor="none"
 };
 let dallshow3time = document.querySelector("#dallshow3time");
 dallshow3time.onclick = () => {
@@ -59,6 +63,8 @@ dallshow3time.onclick = () => {
 
   console.log("dall")
   dal.style.display = "block";
+  dallshow3time.style.backgroundColor="red"
+  justinshow3.style.backgroundColor="none"
 };
 
 let justinshow1 = document.querySelector("#justinshow1time");
@@ -69,6 +75,9 @@ justinshow1.onclick = () => {
   console.log("justin");
   dal.style.display = "none";
   justindiv.style.display = "block";
+
+  justinshow3.style.backgroundColor="red"
+  dallshow3time.style.backgroundColor="none"
 };
 let justinshow2 = document.querySelector("#justinshow2time");
 justinshow2.onclick = () => {
@@ -78,6 +87,8 @@ justinshow2.onclick = () => {
   console.log("justin");
   dal.style.display = "none";
   justindiv.style.display = "block";
+
+  justinshow3.style.backgroundColor="red"
 };
 let justinshow3 = document.querySelector("#justinshow3time");
 justinshow3.onclick = () => {
@@ -87,6 +98,8 @@ justinshow3.onclick = () => {
   console.log("justin");
   dal.style.display = "none";
   justindiv.style.display = "block";
+
+  justinshow3.style.backgroundColor="red"
 };
 
 
