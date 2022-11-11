@@ -1,5 +1,5 @@
 //import navbar
- import {navbarhtml,producthtml,solutionshtml,resourceshtml} from "../Component/navbar.html.js";
+ import {navbarhtml,producthtml,solutionshtml,resourceshtml} from "../Component/navbar.js";
  let nav = document.querySelector("#navbar");
 
  let htmlprod = document.querySelector("#product");
