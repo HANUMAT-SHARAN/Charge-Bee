@@ -38,6 +38,10 @@ let prices=document.querySelector("#prices")
 prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
+let login=document.querySelector("#log")
+login.onclick=()=>{
+  window.location.href="signup.html"
+}
 // import { navbarhtml,producthtml } from "/Component/navbar.html.js"
 // let nav=document.querySelector("#navbar")
 // nav.innerHTML=navbarhtml()

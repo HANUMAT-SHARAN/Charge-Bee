@@ -51,10 +51,16 @@ prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
 
+let login=document.querySelector("#log")
+login.onclick=()=>{
+  window.location.href="signup.html"
+}
+
 let usd_btn = document.getElementById("usd_btn");
 usd_btn.onclick = () => {
   usdconversion();
 };
+
 
 let eur_btn = document.getElementById("eur_btn");
 eur_btn.onclick = () => {

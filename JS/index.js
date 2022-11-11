@@ -1,5 +1,5 @@
 //import navbar
- import {navbarhtml,producthtml,solutionshtml,resourceshtml} from "../Component/navbar.html.js";
+ import {navbarhtml,producthtml,solutionshtml,resourceshtml} from "../Component/navbar.js";
  let nav = document.querySelector("#navbar");
 
  let htmlprod = document.querySelector("#product");
@@ -31,11 +31,17 @@ let prices=document.querySelector("#prices")
 prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
+
 // import footer
 import {footer,medeaicon} from "../Component/footer.js";
 document.getElementById("footer").innerHTML=footer();
 document.getElementById("mediaicons").innerHTML=medeaicon();
 
+
+let login=document.querySelector("#log")
+login.onclick=()=>{
+  window.location.href="signup.html"
+}
 
 
 let imagesarr=[`<div class="picture">
