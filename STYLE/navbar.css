@@ -106,7 +106,11 @@ body {
   gap: 20px;
   background-color: rgb(236, 232, 232);
   border-radius: 20px;
+
   z-index: 10000;
+
+  display: none;
+
   position: absolute;
   position: fixed;
 }
@@ -115,6 +119,7 @@ body {
   padding-left: 30px;
   padding-top: 20px;
   border-radius: 15px;
+ 
 }
 #solutions > div:hover {
   transition: 0.8s;

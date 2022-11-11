@@ -41,6 +41,15 @@ let prices=document.querySelector("#prices")
 prices.onclick=()=>{
   window.location.href="../HTML/pricing.html"
 }
+let login=document.querySelector("#log")
+login.onclick=()=>{
+  window.location.href="signup.html"
+}
+window.onscroll=()=>{
+ 
+  banner.style.display = "block";
+}
+
 
 let reviewsdata = [
   {
