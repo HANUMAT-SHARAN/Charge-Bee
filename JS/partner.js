@@ -44,13 +44,14 @@ prices.onclick=()=>{
   
 // // // / / / / / / / / / / 
 
+let data =JSON.parse(localStorage.getItem("ChrgeBee_form_data")) || [];
 
 let form = document.getElementById("form");
 
 form.onsubmit = (event) =>{
   event.preventDefault();
 
-  let data={
+  let obj={
     f_name: form.f_name.value,
     l_name: form.l_name.value,
     business_email: form.business_email.value,
@@ -70,10 +71,33 @@ form.onsubmit = (event) =>{
     become_a_p: form.become_a_p.value
   };
 
+  data.push(obj)
+
   localStorage.setItem("ChrgeBee_form_data",JSON.stringify(data));
   //console.log(data);
+  
+  popup();  
+};
 
+const popup = () => {
+  let popups = document.getElementById("popup");
+      popups.style.visibility="visible";
+
+  let img = document.createElement("img");
+      img.src ="https://cdn-icons-png.flaticon.com/512/4315/4315445.png";
+  let h2 = document.createElement("h2");
+      h2.innerText= "Thank You";
+  let disc = document.createElement("p");
+      disc.innerText="Your details has been successfully submitted.";
+  let btn = document.createElement("button");
+      btn.innerText="OK";
+      btn.onclick = () => {
+        
+        popups.style.visibility="hidden";
+        window.location.reload();
+      }
+      popups.append(img,h2,disc,btn);
+     
 };
 
 
-  
