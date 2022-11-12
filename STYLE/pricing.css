@@ -362,6 +362,7 @@
     #pricing_head{
         flex-direction: column;
         flex-wrap: wrap;
+        padding-top: 200px;
     }
     #plans{
         grid-template-columns: repeat(2, 1fr);

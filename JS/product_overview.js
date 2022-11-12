@@ -1,6 +1,10 @@
 import {navbarhtml,producthtml,solutionshtml,resourceshtml} from '../Component/navbar.js'
 let nav = document.querySelector("#navbar");
 
+import {footer,medeaicon} from "../Component/footer.js";
+document.getElementById("footer").innerHTML=footer();
+document.getElementById("mediaicons").innerHTML=medeaicon();
+
 let htmlprod = document.querySelector("#product");
 htmlprod.innerHTML = producthtml();
 
