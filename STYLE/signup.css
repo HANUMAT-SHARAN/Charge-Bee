@@ -161,6 +161,7 @@
 #signup > :nth-child(1) {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 #signup > :nth-child(1) img {
   width: 13%;
@@ -177,7 +178,7 @@
 }
 #email {
   padding: 20px;
-  font-size: 25px;
+  font-size: 18px;
   margin: auto;
  
 font-weight: bold;
@@ -193,7 +194,7 @@ font-weight: bold;
 }
 #password {
   padding: 20px;
-  font-size: 25px;
+  font-size: 18px;
   margin: auto;
   font-weight: bold;
 
@@ -207,17 +208,18 @@ font-weight: bold;
 }
 #signupbutton {
   display: none;
-  color:white;
-  font-size: 30px;
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
   padding: 20px 40px 20px 40px;
   border-radius: 10px;
-  background-color: #3e379b;
+  background-color: #3e53af;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 #signupbutton:hover {
-  background-color: red;
-  padding: 30px 50px 30px 50px;
+  background-color: #3e379b;
+  padding: 20px 40px 20px 40px;
   transition: 0.4s;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -231,10 +233,10 @@ font-weight: bold;
   width: 100%;
 }
 #sand {
-  margin-bottom: 60px;
+  padding-bottom: 20px;
   border-radius: 15px;
 
- margin:10px;
+
  background-color: rgb(255, 255, 255);
 
  
@@ -242,9 +244,10 @@ font-weight: bold;
 
 #login {
   font-weight: bold;
-  font-size: 20px;
+padding: 10px;
+  justify-content: center;
   border-radius: 15px;
-  padding: 5px 15px 0px 15px;
+  padding-bottom: -90px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }

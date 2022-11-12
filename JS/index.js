@@ -17,6 +17,18 @@
 
  navbarscript();
 
+
+let customers = document.querySelector("#customers");
+customers.onclick = () => {
+  window.location.href = "../HTML/customers.html";
+};
+let partner = document.querySelector("#partner");
+partner.onclick = () => {
+  window.location.href = "../HTML/partner.html";
+};
+
+
+
 let log = document.querySelector("#logo");
 log.onclick = () => {
   window.location.href = "../HTML/index.html";
@@ -184,12 +196,13 @@ window.addEventListener("scroll",()=>{
           }
  })
 
-//function for resend data
+//function for resend data;
 let i=0;
  function recievans(){
+  let ansarr=["Enter your organization name","Enter Total number of employee in your organization","Enter your organization net worth","Please tell your organization GST number","Please tell what you want from us"];
    
 
-    let ansarr=["Enter your organization name","Enter Total number of employee in your organization","Enter your organization net worth","Please tell your organization GST number","Please tell what you want from us"];
+    
     
     
      //code for remove input box;
@@ -236,3 +249,25 @@ let i=0;
 overview.onclick=()=>{
   window.location.href="../HTML/product_overview.html"
 }
+
+// let log = document.querySelector("#logo");
+// log.onclick = () => {
+//   window.location.href = "../HTML/index.html";
+//   console.log(1);
+// };
+// let customers = document.querySelector("#customers");
+// customers.onclick = () => {
+//   window.location.href = "../HTML/customers.html";
+// };
+// let partner = document.querySelector("#partner");
+// partner.onclick = () => {
+//   window.location.href = "../HTML/partner.html";
+// };
+// let prices=document.querySelector("#prices")
+// prices.onclick=()=>{
+//   window.location.href="../HTML/pricing.html"
+// }
+// let login=document.querySelector("#log")
+// login.onclick=()=>{
+//   window.location.href="signup.html"
+// }

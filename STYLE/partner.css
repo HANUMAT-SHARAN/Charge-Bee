@@ -5,6 +5,10 @@
    
 }
 
+#navbar{
+    z-index: 999999;
+}
+
 .required:after {
     content:" *";
     color: red;
