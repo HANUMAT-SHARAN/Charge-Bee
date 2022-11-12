@@ -27,6 +27,10 @@ import { navbarscript } from "../Scripts/navbarscript.js";
 
 navbarscript();
 
+//import customizeddemo part
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
+
 let log = document.querySelector("#logo");
 log.onclick = () => {
   window.location.href ="../index.html"

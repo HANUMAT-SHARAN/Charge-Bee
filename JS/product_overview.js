@@ -22,6 +22,10 @@ import { navbarscript } from "../Scripts/navbarscript.js";
 
 navbarscript();
 
+//import customizeddemo part
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
+
 
 // let carousel_div= document.getElementById("carosals_container");
 let i=0;
