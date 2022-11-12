@@ -115,8 +115,14 @@ overview.onclick=()=>{
 }
 
 
+import {footer,medeaicon} from "../Component/footer.js";
+document.getElementById("footer").innerHTML=footer();
+document.getElementById("mediaicons").innerHTML=medeaicon();
 
 
+//import customizeddemo part
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
 
 
 
