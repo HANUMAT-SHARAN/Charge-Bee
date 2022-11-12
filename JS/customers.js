@@ -365,6 +365,9 @@ import {footer,medeaicon} from "../Component/footer.js";
 document.getElementById("footer").innerHTML=footer();
 document.getElementById("mediaicons").innerHTML=medeaicon();
 
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
+
 let overview=document.querySelector("#overview")
 overview.onclick=()=>{
   window.location.href="../HTML/product_overview.html"

@@ -1,24 +1,24 @@
 #main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
- 
+
   gap: 20px;
 }
 
 #dal {
-  color:white;
+  color: white;
   display: block;
   padding: 20px;
   margin: 30px;
 }
-#dal:hover{
-  margin:70px;
+#dal:hover {
+  margin: 70px;
   transition: 0.8s;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 20px;
 }
-#gillius:hover{
-  margin:70px;
+#gillius:hover {
+  margin: 70px;
   transition: 0.8s;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 20px;
@@ -99,12 +99,11 @@
   margin: 30px;
   color: white;
 }
-#justin:hover{
-  margin:70px;
+#justin:hover {
+  margin: 70px;
   transition: 0.8s;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 20px;
-
 }
 #justin div {
   border-radius: 50px;
@@ -147,10 +146,10 @@
 
   border-color: red;
 }
-#signup:hover{
-  border:5px solid rgb(0, 64, 241);
+#signup:hover {
+  border: 5px solid rgb(0, 64, 241);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  margin:10px;
+  margin: 10px;
   transition: 0.8s;
 }
 #signup > div {
@@ -180,17 +179,16 @@
   padding: 20px;
   font-size: 18px;
   margin: auto;
- 
-font-weight: bold;
+
+  font-weight: bold;
   border-radius: 10px;
-  background-color: white;;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 #email:hover,
 #password:hover {
-  
-  border:5px solid blue
+  border: 5px solid blue;
 }
 #password {
   padding: 20px;
@@ -208,7 +206,7 @@ font-weight: bold;
 }
 #signupbutton {
   display: none;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: bold;
   padding: 20px 40px 20px 40px;
@@ -236,15 +234,12 @@ font-weight: bold;
   padding-bottom: 20px;
   border-radius: 15px;
 
-
- background-color: rgb(255, 255, 255);
-
- 
+  background-color: rgb(255, 255, 255);
 }
 
 #login {
   font-weight: bold;
-padding: 10px;
+  padding: 10px;
   justify-content: center;
   border-radius: 15px;
   padding-bottom: -90px;
@@ -260,27 +255,32 @@ padding: 10px;
   transition: 0.4s;
   font-weight: bold;
 
-
-  color:white;
-  
+  color: white;
 }
-#alertpassword,#alertmail{
+#alertpassword,
+#alertmail {
   font-weight: bold;
 }
-#dallshow1time:hover,#dallshow2time:hover,#dallshow3time:hover{
-  background-color: red
+#dallshow1time:hover,
+#dallshow2time:hover,
+#dallshow3time:hover {
+  background-color: red;
 }
-#justinshow1time:hover,#justinshow2time:hover,#justinshow3time:hover{
-  background-color: red
+#justinshow1time:hover,
+#justinshow2time:hover,
+#justinshow3time:hover {
+  background-color: red;
 }
-#gillshow1time:hover,#gillshow2time:hover,#gillshow3time:hover{
-  background-color: red
+#gillshow1time:hover,
+#gillshow2time:hover,
+#gillshow3time:hover {
+  background-color: red;
 }
 @media all and (min-width: 320px) and (max-width: 767px) {
   #main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-   
+
     gap: 20px;
   }
 }
@@ -288,7 +288,7 @@ padding: 10px;
   #main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-   
+
     gap: 20px;
   }
 }
