@@ -267,6 +267,15 @@ padding: 10px;
 #alertpassword,#alertmail{
   font-weight: bold;
 }
+#dallshow1time:hover,#dallshow2time:hover,#dallshow3time:hover{
+  background-color: red
+}
+#justinshow1time:hover,#justinshow2time:hover,#justinshow3time:hover{
+  background-color: red
+}
+#gillshow1time:hover,#gillshow2time:hover,#gillshow3time:hover{
+  background-color: red
+}
 @media all and (min-width: 320px) and (max-width: 767px) {
   #main {
     display: grid;
