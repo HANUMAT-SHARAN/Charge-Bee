@@ -326,7 +326,8 @@
   }
   #banner > img {
     position: absolute;
-    width: 80%;
+    width: 75%;
+    margin-left: 20px;
 
     margin-top: 500px;
   }
@@ -392,7 +393,8 @@
   #banner > img {
     position: absolute;
     width: 80%;
-
+    width: 75%;
+    margin-left: 20px;
     margin-top: 500px;
   }
   #talk > :nth-child(1) {
