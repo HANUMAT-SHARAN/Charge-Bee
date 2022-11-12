@@ -1,4 +1,4 @@
-let signup=document.querySelector("#signupnow")
+let signup=document.getElementById("signup")
 signup.onclick=()=>{
     window.location.href="../HTML/signup.html"
 }
@@ -15,7 +15,6 @@ signin.onclick = ()=>{
 
     let user = document.getElementById("email").value;
     let pass = document.getElementById("password").value;
-    
     
 
     if(!arr || arr.length <= 0){
