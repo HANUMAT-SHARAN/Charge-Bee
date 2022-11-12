@@ -81,9 +81,15 @@ justinshow3.onmouseover = () => {
   dal.style.display = "none";
   justindiv.style.display = "block";
 };
+let login=document.querySelector("#login")
+login.onclick=()=>{
+  window.location.href="../HTML/login.html"
+  console.log(1)
+}
 
 let email = document.querySelector("#email").value;
 let emailinput = document.querySelector("#email");
+
 let password = document.querySelector("#password").value;
 let passwordinput = document.querySelector("#password");
 

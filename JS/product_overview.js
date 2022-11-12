@@ -106,7 +106,7 @@ overview.onclick=()=>{
 
 let log = document.querySelector("#logo");
 log.onclick = () => {
-  window.location.href = "../HTML/index.html";
+  window.location.href ="../index.html"
   console.log(1);
 };
 let customers = document.querySelector("#customers");

@@ -26,7 +26,7 @@ navbarscript();
 
 let log = document.querySelector("#logo");
 log.onclick = () => {
-  window.location.href = "../HTML/index.html";
+  window.location.href ="../index.html"
   console.log(1);
 };
 let customers = document.querySelector("#customers");
@@ -52,6 +52,7 @@ window.onscroll=()=>{
 // import {footer,medeaicon} from "../Component/footer.js";
 // document.getElementById("footer").innerHTML=footer();
 // document.getElementById("mediaicons").innerHTML=medeaicon();
+
 
 
 let reviewsdata = [

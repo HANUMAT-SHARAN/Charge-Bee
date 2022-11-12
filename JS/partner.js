@@ -26,7 +26,7 @@ import {
   
   let log = document.querySelector("#logo");
   log.onclick = () => {
-    window.location.href = "../HTML/index.html";
+    window.location.href ="../index.html"
     console.log(1);
   };
   let customers = document.querySelector("#customers");
@@ -108,20 +108,19 @@ const popup = () => {
 };
 
 
-<<<<<<< HEAD
+
 let overview=document.querySelector("#overview")
 overview.onclick=()=>{
   window.location.href="../HTML/product_overview.html"
 }
-=======
->>>>>>> ed7520e129147dc6d822e333e0062324fe73d1bb
 
 
 
 
 
-<<<<<<< HEAD
-=======
+
+
+
 //pavan
->>>>>>> ed7520e129147dc6d822e333e0062324fe73d1bb
+
 

@@ -31,7 +31,7 @@ partner.onclick = () => {
 
 let log = document.querySelector("#logo");
 log.onclick = () => {
-  window.location.href = "../HTML/index.html";
+  window.location.href ="../index.html"
   console.log(1);
 };
 
@@ -52,7 +52,7 @@ document.getElementById("mediaicons").innerHTML=medeaicon();
 
 let login=document.querySelector("#log")
 login.onclick=()=>{
-  window.location.href="signup.html"
+  window.location.href="../HTML/signup.html"
 }
 
 
@@ -88,6 +88,7 @@ let imagesarr=[`<div class="picture">
 <p>CFO - Rise Vision</p> 
  </div>
 </div>`]
+
 
 let textarr=["The subscription management platform that enabled Slidebean to slide into 30+ countries.","The billing platform that gives Superfoods the freedom to test, iterate, and roll-back.","The revenue engine that powered MakeSpace to launch a B2B model overnight.","The revenue toolkit that allowed Yousign to enter a new market that now drives 15% MRR.",'The infrastructure that allows Rise Vision to ask "What Does This Make Possible?"']
 let show=document.getElementById("slidinfg-content");
