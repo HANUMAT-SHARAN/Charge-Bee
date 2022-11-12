@@ -55,6 +55,9 @@ login.onclick=()=>{
   window.location.href="../HTML/signup.html"
 }
 
+//import customizeddemo part
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
 
 let imagesarr=[`<div class="picture">
 <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/customers/jose-bolanos.webp" alt="">
@@ -171,11 +174,18 @@ window.addEventListener("scroll",()=>{
  }
  conversion();
 
+
+ //FOR SEND OUR DATA
  document.getElementById("writeyourchat").addEventListener("keypress",(event)=>{
           if(event.key=="Enter"  ){
             
             let data=document.getElementById("writeyourchat").value ;
-            console.log(data)
+            console.log(data);
+
+            //for empty entry
+            if(data==""){
+              return;
+            }
 
             let p=document.createElement("p");
             p.innerText=data;
@@ -192,6 +202,9 @@ window.addEventListener("scroll",()=>{
             const audio=new Audio("../Audio/send.wav");
             audio.play();
            
+            //make input box empty
+            document.getElementById("writeyourchat").value=""
+           
             setTimeout(recievans,2000);
 
           }
@@ -202,7 +215,7 @@ let i=0;
  function recievans(){
   let ansarr=["Enter your organization name","Enter Total number of employee in your organization","Enter your organization net worth","Please tell your organization GST number","Please tell what you want from us"];
    
-
+    
      //code for remove input box;
      let totaldiv=document.querySelectorAll("#chatbox >div");
     if(totaldiv.length>10){
@@ -218,6 +231,7 @@ let i=0;
             document.getElementById("chatbox").scrollTo(0,document.body.scrollHeight);
 
             document.getElementById("inputofchat").style.display="none";
+            document.getElementById("inputofchat").style.backgroundColor="red"
 
              //recive audio play
              const audio=new Audio("../Audio/recive.wav");
