@@ -101,18 +101,27 @@ const popup = () => {
         popups.style.visibility="hidden";
         window.location.reload();
       }
+
+
       popups.append(img,h2,disc,btn);
      
 };
 
 
+<<<<<<< HEAD
 let overview=document.querySelector("#overview")
 overview.onclick=()=>{
   window.location.href="../HTML/product_overview.html"
 }
+=======
+>>>>>>> ed7520e129147dc6d822e333e0062324fe73d1bb
 
 
 
 
 
+<<<<<<< HEAD
+=======
+//pavan
+>>>>>>> ed7520e129147dc6d822e333e0062324fe73d1bb
 
