@@ -306,7 +306,7 @@ const cadconversion = () => {
   currency_scale.innerHTML = null;
 
   let currency_id_scale = document.createElement("h4");
-  currency_id_scale.innerText = "AUD";
+  currency_id_scale.innerText = "CAD";
 
   let month_amount_scale = document.createElement("h2");
   month_amount_scale.innerText = "599/mo";
