@@ -151,6 +151,7 @@ if(flagpass&&flagemail){
   userarr.push(userobj)
   localStorage.setItem("userarr",JSON.stringify(userarr))
   alert("SIGNUP SUCCESSFUL")
+  window.location.href="../index.html"
 
  }
  
@@ -174,6 +175,7 @@ if(flagemail&&flagpass){
     userarr.push(userobj)
     localStorage.setItem("userarr",JSON.stringify(userarr))
     alert("SIGNUP SUCCESSFUL")
+    window.location.href="../index.html"
     
    }
  
@@ -200,6 +202,7 @@ emailinput.oninput=()=>{
       userarr.push(userobj)
       localStorage.setItem("userarr",JSON.stringify(userarr))
       alert("SIGNUP SUCCESSFUL")
+      window.location.href="../index.html"
       
      }
    
@@ -223,6 +226,7 @@ emailinput.oninput=()=>{
       userarr.push(userobj)
      localStorage.setItem("userarr",JSON.stringify(userarr))
      alert("SIGNUP SUCCESSFUL")
+     window.location.href="../index.html"
       
      }
    
@@ -238,10 +242,14 @@ emailcheck()
 
 if(flagnosign){
   alert("Signup Not Succesfull")
+
 }
 
 
 
-
+let logo=document.querySelector("#logo")
+logo.onclick=()=>{
+  window.location.href="../index.html"
+}
 
 

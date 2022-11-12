@@ -2,6 +2,10 @@ let signup=document.querySelector("#signupnow")
 signup.onclick=()=>{
     window.location.href="../HTML/signup.html"
 }
+let logo=document.querySelector("#lhs")
+logo.onclick=()=>{
+    window.location.href="../index.html"
+}
 
 let arr = JSON.parse(localStorage.getItem("userarr"));
 
