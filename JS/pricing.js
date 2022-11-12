@@ -4,7 +4,9 @@ import { navbarhtml,
     solutionshtml,
     resourceshtml,} from "../Component/navbar.js"
 
-
+import {footer,medeaicon} from "../Component/footer.js";
+document.getElementById("footer").innerHTML=footer();
+document.getElementById("mediaicons").innerHTML=medeaicon();
 
 let nav = document.querySelector("#navbar");
 
