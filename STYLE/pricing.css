@@ -304,7 +304,7 @@
     font-weight: 600;
     transform: translateX(2px);
 }
-#demo_card-left h1{
+/* #demo_card-left h1{
     color: white;
     font-weight: 900;
 }
@@ -318,7 +318,7 @@
     width: 50%;
     margin: auto;
     padding:50px;
-}
+} */
 #details_card{
     background-color: white;
     width: 40%;
@@ -362,6 +362,7 @@
     #pricing_head{
         flex-direction: column;
         flex-wrap: wrap;
+        padding-top: 200px;
     }
     #plans{
         grid-template-columns: repeat(2, 1fr);

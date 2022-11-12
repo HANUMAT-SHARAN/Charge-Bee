@@ -1,6 +1,10 @@
 import {navbarhtml,producthtml,solutionshtml,resourceshtml} from '../Component/navbar.js'
 let nav = document.querySelector("#navbar");
 
+import {footer,medeaicon} from "../Component/footer.js";
+document.getElementById("footer").innerHTML=footer();
+document.getElementById("mediaicons").innerHTML=medeaicon();
+
 let htmlprod = document.querySelector("#product");
 htmlprod.innerHTML = producthtml();
 
@@ -17,6 +21,10 @@ nav.innerHTML = navbarhtml();
 import { navbarscript } from "../Scripts/navbarscript.js";
 
 navbarscript();
+
+//import customizeddemo part
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
 
 
 // let carousel_div= document.getElementById("carosals_container");
@@ -101,4 +109,27 @@ carousel();
 let overview=document.querySelector("#overview")
 overview.onclick=()=>{
   window.location.href="../HTML/product_overview.html"
+}
+
+
+let log = document.querySelector("#logo");
+log.onclick = () => {
+  window.location.href ="../index.html"
+  console.log(1);
+};
+let customers = document.querySelector("#customers");
+customers.onclick = () => {
+  window.location.href = "../HTML/customers.html";
+};
+let partner = document.querySelector("#partner");
+partner.onclick = () => {
+  window.location.href = "../HTML/partner.html";
+};
+let prices=document.querySelector("#prices")
+prices.onclick=()=>{
+  window.location.href="../HTML/pricing.html"
+}
+let login=document.querySelector("#log")
+login.onclick=()=>{
+  window.location.href="signup.html"
 }

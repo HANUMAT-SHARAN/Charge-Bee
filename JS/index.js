@@ -17,9 +17,21 @@
 
  navbarscript();
 
+
+let customers = document.querySelector("#customers");
+customers.onclick = () => {
+  window.location.href = "../HTML/customers.html";
+};
+let partner = document.querySelector("#partner");
+partner.onclick = () => {
+  window.location.href = "../HTML/partner.html";
+};
+
+
+
 let log = document.querySelector("#logo");
 log.onclick = () => {
-  window.location.href = "../HTML/index.html";
+  window.location.href ="../index.html"
   console.log(1);
 };
 
@@ -40,9 +52,12 @@ document.getElementById("mediaicons").innerHTML=medeaicon();
 
 let login=document.querySelector("#log")
 login.onclick=()=>{
-  window.location.href="signup.html"
+  window.location.href="../HTML/signup.html"
 }
 
+//import customizeddemo part
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
 
 let imagesarr=[`<div class="picture">
 <img src="https://webstatic.chargebee.com/assets/web/535/images/home/coc/customers/jose-bolanos.webp" alt="">
@@ -76,6 +91,7 @@ let imagesarr=[`<div class="picture">
 <p>CFO - Rise Vision</p> 
  </div>
 </div>`]
+
 
 let textarr=["The subscription management platform that enabled Slidebean to slide into 30+ countries.","The billing platform that gives Superfoods the freedom to test, iterate, and roll-back.","The revenue engine that powered MakeSpace to launch a B2B model overnight.","The revenue toolkit that allowed Yousign to enter a new market that now drives 15% MRR.",'The infrastructure that allows Rise Vision to ask "What Does This Make Possible?"']
 let show=document.getElementById("slidinfg-content");
@@ -158,11 +174,18 @@ window.addEventListener("scroll",()=>{
  }
  conversion();
 
+
+ //FOR SEND OUR DATA
  document.getElementById("writeyourchat").addEventListener("keypress",(event)=>{
           if(event.key=="Enter"  ){
             
             let data=document.getElementById("writeyourchat").value ;
-            console.log(data)
+            console.log(data);
+
+            //for empty entry
+            if(data==""){
+              return;
+            }
 
             let p=document.createElement("p");
             p.innerText=data;
@@ -179,6 +202,9 @@ window.addEventListener("scroll",()=>{
             const audio=new Audio("../Audio/send.wav");
             audio.play();
            
+            //make input box empty
+            document.getElementById("writeyourchat").value=""
+           
             setTimeout(recievans,2000);
 
           }
@@ -189,7 +215,7 @@ let i=0;
  function recievans(){
   let ansarr=["Enter your organization name","Enter Total number of employee in your organization","Enter your organization net worth","Please tell your organization GST number","Please tell what you want from us"];
    
-
+    
      //code for remove input box;
      let totaldiv=document.querySelectorAll("#chatbox >div");
     if(totaldiv.length>10){
@@ -205,6 +231,7 @@ let i=0;
             document.getElementById("chatbox").scrollTo(0,document.body.scrollHeight);
 
             document.getElementById("inputofchat").style.display="none";
+            document.getElementById("inputofchat").style.backgroundColor="red"
 
              //recive audio play
              const audio=new Audio("../Audio/recive.wav");
@@ -234,3 +261,25 @@ let i=0;
 overview.onclick=()=>{
   window.location.href="../HTML/product_overview.html"
 }
+
+// let log = document.querySelector("#logo");
+// log.onclick = () => {
+//   window.location.href = "../HTML/index.html";
+//   console.log(1);
+// };
+// let customers = document.querySelector("#customers");
+// customers.onclick = () => {
+//   window.location.href = "../HTML/customers.html";
+// };
+// let partner = document.querySelector("#partner");
+// partner.onclick = () => {
+//   window.location.href = "../HTML/partner.html";
+// };
+// let prices=document.querySelector("#prices")
+// prices.onclick=()=>{
+//   window.location.href="../HTML/pricing.html"
+// }
+// let login=document.querySelector("#log")
+// login.onclick=()=>{
+//   window.location.href="signup.html"
+// }

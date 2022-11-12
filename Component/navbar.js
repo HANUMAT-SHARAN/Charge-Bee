@@ -24,9 +24,9 @@ const navbarhtml = () => {
         src="https://cdn0.iconfinder.com/data/icons/security-double-color-red-and-black-vol-3/52/security__lock__private__protect-64.png"
         alt="j"
       />
-      Login
+      Sign Up
     </h3>
-    <h3><button id="getdemo">Get a Demo></button></h3>
+    <h3><button id="getdemo">Get a Demo</button></h3>
   </div>`;
 };
 

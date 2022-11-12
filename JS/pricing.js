@@ -4,7 +4,9 @@ import { navbarhtml,
     solutionshtml,
     resourceshtml,} from "../Component/navbar.js"
 
-
+import {footer,medeaicon} from "../Component/footer.js";
+document.getElementById("footer").innerHTML=footer();
+document.getElementById("mediaicons").innerHTML=medeaicon();
 
 let nav = document.querySelector("#navbar");
 
@@ -25,9 +27,13 @@ import { navbarscript } from "../Scripts/navbarscript.js";
 
 navbarscript();
 
+//import customizeddemo part
+import {customized} from "../Component/customized.js";
+document.getElementById("customized").innerHTML=customized();
+
 let log = document.querySelector("#logo");
 log.onclick = () => {
-  window.location.href = "../HTML/index.html";
+  window.location.href ="../index.html"
   console.log(1);
 };
 let customers = document.querySelector("#customers");
@@ -366,3 +372,7 @@ let overview=document.querySelector("#overview")
 overview.onclick=()=>{
   window.location.href="../HTML/product_overview.html"
 }
+
+
+
+
