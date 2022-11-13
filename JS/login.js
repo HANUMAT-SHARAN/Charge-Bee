@@ -1,4 +1,4 @@
-let signup=document.getElementById("signup")
+let signup=document.getElementById("signupnow")
 signup.onclick=()=>{
     window.location.href="../HTML/signup.html"
 }

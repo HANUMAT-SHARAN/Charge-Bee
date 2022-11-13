@@ -139,7 +139,9 @@
 #signup {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 50px;
+ gap:10px;
+   
+  margin: auto;
   box-shadow: rgba(0, 0, 0, 0.05) 2px 8px 8px 8px,
     rgb(209, 213, 219) 2px 2px 2px 2px inset;
   border-radius: 15px;
@@ -149,13 +151,14 @@
 #signup:hover {
   border: 5px solid rgb(0, 64, 241);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  margin: 10px;
+ 
   transition: 0.8s;
 }
 #signup > div {
   padding-left: 50px;
   border-radius: 15px;
   /* background-color: #6e3588 */
+  /* border:1px solid red;  */
 }
 #signup > :nth-child(1) {
   display: flex;
@@ -176,8 +179,8 @@
   transition: 0.8s;
 }
 #email {
-  padding: 20px;
-  font-size: 18px;
+  padding: 15px;
+  font-size: 12px;
   margin: auto;
 
   font-weight: bold;
@@ -191,8 +194,8 @@
   border: 5px solid blue;
 }
 #password {
-  padding: 20px;
-  font-size: 18px;
+  padding: 15px;
+  font-size: 12px;
   margin: auto;
   font-weight: bold;
 
@@ -207,7 +210,7 @@
 #signupbutton {
   display: none;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   padding: 20px 40px 20px 40px;
   border-radius: 10px;
@@ -231,7 +234,7 @@
   width: 100%;
 }
 #sand {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-radius: 15px;
 
   background-color: rgb(255, 255, 255);
