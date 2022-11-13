@@ -1,5 +1,6 @@
 #navbar{
     background-color: #4e00ac;
+    z-index: 1000;
 }
 #navbar h3{
     color: white;
