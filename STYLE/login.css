@@ -1,5 +1,4 @@
 *{
-
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     background-color: #eaeaf4;
@@ -10,11 +9,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5%;
+    padding-right: 2%;
+    margin-left: -8%;
+    
 }
 
 #lhs img{
-    padding: 20px 20px;
-    width: 35%;
+    /* padding: 20px 20px; */
+    width: 15%;
+    border-radius: 50%;
+    border: 2px solid;
+    padding: 0 0;
+    margin-left: -20%;
 }
 
 #rhs{
@@ -41,8 +48,8 @@
 }
 
 #container{
-    margin-top: 2%;
-    border: 2px solid black;
+    margin-top: 5%;
+    border: 0px solid black;
     display: flex;
     background-color: white;
     border-radius: 5px;
@@ -51,11 +58,12 @@
     margin: auto;
     padding: 3% 3%;
     justify-content: space-between;
+    margin-bottom: 16px;
 
 }
 
 #con_lhs{
-    border: 2px solid red;
+    border: 0px solid red;
     background-color: white;
     width: 50%;
     padding: 2% 2% 2% 2%;
@@ -91,8 +99,9 @@
 
 #l_l_t_div{
     background-color: white;
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    align-items: center;
     
 }
 
@@ -120,23 +129,90 @@
 #btnlhs:hover{
     cursor: pointer;
     zoom: 2px;
-};
+}
 
 #con_rhs{
     display: grid;
-    border: 2px solid black;
+    border: 0px solid black;
     background-color: white;
 }
 
 #con_rhs h3{
-    border: 2px ;
+    text-align: start;
+    margin-left:15px ;
 }
 
+#con_rhs{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    background-color: white;
 
+    border: 0px solid black;
+    width: 50%;
+    margin-left:3%;
+    padding-left: 3%;
+    background-color: white;
+}
+#con_rhs h3{
+    background-color: white;
+};
 
+#con_rhs input{
+    /* background-color: white; */
+    width: 80%;
+}
 
+#email{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    background-color: white;
+    width: 80%;
+    margin-bottom: -7%;
+    height: 40px;
+    text-align: start;
+    margin-left:5% ;
+    border: none;
+    padding-left: 10px;
+}
+#password{
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 5%;
+    height: 40px;
+    text-align: start;
+    margin-left:5% ;
+    border: none;
+}
+#signin_div{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-left:7% ;
+}
 
+#signin{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+    background-color: #ff7846;
+    width: 40%;
+    margin-bottom: 5%;
+    height: 40px;
+    margin-top:15px; 
+    
+    border-radius: 5px;
+    border: none;
+}
+#signin:hover{
+    cursor: pointer;
+}
+
+#forget_pas{
+    margin-top: 20px;
+    background-color: white;
+}
+
+#forget_pas:hover{
+    cursor: pointer;
+}
 
 
 

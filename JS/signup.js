@@ -104,7 +104,7 @@ let flagemail=false;
 let flagnosign=false;
 const passcheck = (passwordinput.oninput = () => {
   let password = document.querySelector("#password").value;
-  if ((password.length >= 8 && password.includes("@")|| password.length >= 8 && password.includes("$")||password.length >= 8 && password.includes("%")||password.length >= 8 && password.includes("#")||password.length >= 8 && password.includes("&"))
+  if ((password.length >= 7 && password.includes("@")|| password.length >= 7 && password.includes("$")||password.length >= 7 && password.includes("%")||password.length >= 7 && password.includes("#")||password.length >= 7 && password.includes("&"))
   ) {
    
     passalert.innerText="PASSWORD IS STRONG "
@@ -115,6 +115,7 @@ const passcheck = (passwordinput.oninput = () => {
    
     passalert.innerText="PASSWORD MUST HAVE @,#,$,&,%"
     passalert.style.color="red"
+    
   }
 });
 
@@ -151,6 +152,7 @@ if(flagpass&&flagemail){
   userarr.push(userobj)
   localStorage.setItem("userarr",JSON.stringify(userarr))
   alert("SIGNUP SUCCESSFUL")
+  window.location.href="../HTML/login.html"
 
  }
  
@@ -174,6 +176,7 @@ if(flagemail&&flagpass){
     userarr.push(userobj)
     localStorage.setItem("userarr",JSON.stringify(userarr))
     alert("SIGNUP SUCCESSFUL")
+    window.location.href="../HTML/login.html"
     
    }
  
@@ -200,6 +203,7 @@ emailinput.oninput=()=>{
       userarr.push(userobj)
       localStorage.setItem("userarr",JSON.stringify(userarr))
       alert("SIGNUP SUCCESSFUL")
+      window.location.href="../HTML/login.html"
       
      }
    
@@ -223,6 +227,7 @@ emailinput.oninput=()=>{
       userarr.push(userobj)
      localStorage.setItem("userarr",JSON.stringify(userarr))
      alert("SIGNUP SUCCESSFUL")
+     window.location.href="../HTML/login.html"
       
      }
    
@@ -238,10 +243,14 @@ emailcheck()
 
 if(flagnosign){
   alert("Signup Not Succesfull")
+
 }
 
 
 
-
+let logo=document.querySelector("#logo")
+logo.onclick=()=>{
+  window.location.href="../index.html"
+}
 
 
