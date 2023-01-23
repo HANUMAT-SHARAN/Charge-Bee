@@ -36,7 +36,7 @@ Chargebee is the subscription billing and revenue management platform that lets 
         <li><a href="https://github.com/HANUMAT-SHARAN">@Hanumat Sharan</a></li>
           <li><a href="https://github.com/Amitvaghamshi">@Amit Vaghamshi</a></li>
             <li><a href="https://github.com/rohan28107">@Rohan Gajare</a></li>
-              <li><a href="https://github.com/pavaninglalagi">@Pavan</a></li>
+              <li><a href="https://github.com/pavaninglalagi">@Pavan Ingalagi</a></li>
         
         
         
