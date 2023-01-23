@@ -15,7 +15,6 @@ Chargebee is the subscription billing and revenue management platform that lets 
  <img src="https://i.postimg.cc/nhQgLJ02/Screenshot-from-2023-01-12-02-51-57.png" alt="">
    <h1>Chat Bot</h1>
  <img src="https://i.postimg.cc/zBqcpR52/Screenshot-from-2023-01-12-02-53-13.png" alt="">
-
     <h1>[Getting Started]</h1>
     <h3>Execution</h3>
     <p>If you want to run our project in your local machine</p>
